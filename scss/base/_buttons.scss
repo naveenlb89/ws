@@ -1,0 +1,56 @@
+.form-submit-btn{
+	border-radius: 20px;
+    padding: 5px 20px;
+	margin-bottom:20px;
+}
+
+.mob-back-btn{
+	@include sanspro(semibold, 25px);
+	border-radius: 30px;
+	text-transform: uppercase;
+	border: 2px solid $blue;
+    background: none;
+    color: $blue;
+	padding: 5px 30px;
+	
+	:active{
+		background: none;
+	}
+}
+.mob-next-btn{
+	@extend .mob-back-btn;
+	color: $white;
+	background: $blue;
+	float: right;
+}
+
+.add-traveller-btn{
+	cursor: pointer;
+	margin-left: 5px;
+}
+.remove-traveler-btn{
+	@include sanspro(semibold, 17px);
+	color: $light-purple;
+    text-transform: uppercase;
+	vertical-align: middle;
+	cursor: pointer;
+	
+	&:hover{
+		color: $light-purple;
+	}
+}
+.m-reg-form-block{
+	.remove-traveler-btn{
+		color: $light-purple;
+		margin-right: 20px;
+		&:hover{
+			color: $light-purple;
+		}
+	}
+
+}
+@media only screen and (max-width: 767px){
+	.form-submit-btn{
+		width:100%;
+	}	
+}

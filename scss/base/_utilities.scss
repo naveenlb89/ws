@@ -1,0 +1,14 @@
+
+p{
+	@include snaspro(regular, 14px;);
+}
+.nobr {
+	white-space: nowrap;
+}
+.text-left {
+	text-align: left !important;
+}
+
+.text-right {
+	text-align: right !important;
+}

@@ -1,0 +1,551 @@
+.body {
+    background: $color-grey;
+    padding-top: 15px;
+    .body-bock {
+        box-shadow: 3px 0 3px -2px $pale-grey;
+        background: $white;
+        .left-image { 
+            padding: 0;
+        }
+       
+       .welcome-body{
+           padding: 0;
+       }
+        .body-bock .col-lg-3,
+        .body-bock .col-lg-9 {
+            padding: 0;
+        }
+
+        .body-header {
+          
+            padding: 20px 25px 10px;
+            border-bottom: 1px solid $pale-grey;
+            h1 {
+                margin-bottom: 0;
+                @include corpid(bold, 23px);
+            }
+            .editable {
+                text-align: right;
+                font-size: 11px;
+                line-height: 1;
+                a {
+                    color: $pale-grey;
+                    text-align: right;
+                    display: inline-block;
+                    @include sanspro(semibold);
+                }
+            }   
+        }
+
+        .have-account {
+            margin: 0;
+            padding: 40px 0px;
+            position: relative;
+            .col-lg-6:first-child {
+                padding-left: 35px;
+            }
+            h3 {
+                @include corpid(bold, 17px);
+            }
+            h3+p {
+                font-size: 13px;
+                @include sanspro(regular, 13px);
+                margin-bottom: 15px;
+            }
+            ul {
+                padding-left: 30px;
+            }
+            li {
+                @include sanspro(regular, 13px);
+            }
+            .btn-white {
+                border: 2px solid $blue;
+                color: $blue;
+                background: $white;
+                border-radius: 30px;
+                padding: 6px 8px;
+                width: 90%;
+                margin-top: 33px;
+                outline: none;
+                @include sanspro(semibold, 19px);
+            }
+            .login {
+                padding-left: 8%;
+                padding-top: 4px;
+                form {
+                    width: 90%;
+                }
+
+                p {
+                    color: $grayish-black;
+                    margin-bottom: 5px;
+                    @include sanspro(semibold, 12px);
+                }
+                .input-group-prepend,
+                .form-control {
+                    height: 30px;
+                    border-radius: 0px 4px 4px 0px; 
+                }
+                .custom-control-label {
+                    font-size: 12px;
+                    @include sanspro(regular, 12px);
+                }
+                
+                .forgot-credentialsMobile {
+                    display: none;
+                }
+                .forgot-credentials {
+                    display: inline-block;
+                    padding-top: 10px;
+                }
+                .forgot-credentials,
+                .forgot-credentialsMobile {
+                    color: $blue;
+                    padding-left: 15px;
+                  @include sanspro(semibold, 12px);
+                }
+                .input-group-text i {
+                    width: 12px;
+                    height: 17px;
+                }
+                .input-group-text{
+                     border: 1px solid $form-fields-border;
+                     color: $gray-variant;
+                    }
+                    // Form validataion css
+                    .invalidate{
+                        border: 1px solid $red;
+                        color: $red;
+                        background-color: #FDE8E8;
+                      }
+                      .invalidate-input{
+                        border-color: #dc3545;
+                      }
+                      .invalid-password{
+                          color: $red;
+                          @include sanspro(regular, 12px); 
+                      }
+                .btn-blue {
+                    border: 2px solid $blue;
+                    color: $white;
+                    background: $blue;
+                    border-radius: 30px;
+                    padding: 6px 8px;
+                    margin-top: 14px;
+                    width: 90%;
+                    outline: none;
+                    @include sanspro(semibold, 19px);
+                }
+    
+            }
+            .btn-show-pass {
+                font-size: 12px;
+                color: #707070;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                height: 100%;
+                top: 1px;
+                right: 5px;
+                padding: 0 5px;
+            }
+           
+              .custom-checkbox input {
+                padding: 0;
+                height: initial;
+                width: initial;
+                margin-bottom: 0;
+                display: none;
+                cursor: pointer;
+              }
+              
+              .custom-checkbox label {
+                position: relative;
+                cursor: pointer;
+                @include sanspro(regular, 12px);
+              }
+              
+              .custom-checkbox label:before {
+                content:'';
+                -webkit-appearance: none;
+                background-color: transparent;
+                border: 1px solid #707070;
+                padding: 5px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 10px;
+              }
+              
+              .custom-checkbox input:checked + label:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 3px;
+                left: 4px;
+                width: 5px;
+                height: 9px;
+                border: solid #707070;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+              }
+            .wordwrapper {
+                position: absolute;
+                left: 50%;
+                top: 40px;
+                bottom: 25px;
+                width: 1px;
+                background: $pale-grey;
+                z-index: 1;
+                margin: 0 0 38px;
+                .word {
+                    color: $violet;
+                    background: $white;
+                   @include corpid(regular, 16px);
+                    position: absolute;
+                    right: 0;
+                    top: 48%;
+                    left: -8px;
+                    z-index: 2;
+                    display: inline-block;
+                }
+            }
+        }
+
+        
+    }
+    /// for welcome page
+    .m-welcome {
+        margin-bottom: 20px;
+        .welcome-body {
+            .have-account {
+                .login {
+                    h3 {
+                        color: $violet;
+                        font-size: 16px;
+                    }
+                    .already {
+                        @include sanspro(regular, 14px);
+                    }
+                    form {
+                        .custom-checkbox {
+                            .remember {
+                                @include sanspro(regular);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .have-account {
+            padding: 15px 0;
+            .col-lg-6:first-child {
+                padding-left: 26px;
+            }
+            .login {
+                form {
+                    margin-top: 15px;
+                }
+                .btn-blue {
+                    margin-top: 2px;
+                }
+            }
+            .custom-checkbox {
+                input:checked+label:after {
+                    top: 5px;
+                }
+            }
+        }
+        .have-line {
+            position: absolute;
+            width: 100%;
+            bottom: 10px;
+            border-top: 1px solid $pale-grey;
+            .have-line-text {
+                padding-left: 35px;
+                padding-top: 20px;
+                line-height: 3px;
+                font-size: 12px;
+                .have-text{
+                    @include sanspro(regular, 12px);
+                    color: $grayish-black;   
+                }
+                a{
+                    @include sanspro(semibold, 12px);
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+    /// for query register page
+
+    .m-query-reg {
+        margin-bottom: 20px;
+        .body-header {
+            padding: 20px 25px 20px;
+        }
+        .have-account {
+            padding: 30px 12px 0px;
+            .query-text {
+                @include corpid(regular, 16px);
+            }
+        }
+        .query-form {
+            .enter-id {
+                margin-bottom: 5px;
+                color: $grayish-black;
+                @include sanspro(semibold);
+            }
+            form {
+                padding-left: 27px;
+                .info-icon {
+                    padding-left: 10px;
+                    font-size: 11px;
+                    color: $grayish-black;
+                }
+                .btn-blue {
+                    outline: none;
+                    font-size: 18px;
+                }
+                .input-group {
+                    .form-control {
+                        font-size: 12px;
+                        color:$gray-variant;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/// for responsive
+
+@media (max-width: 767px) {
+    .body {
+        padding-top: 0;
+        .body-bock {
+            box-shadow: none;
+            
+            .left-image {
+                display: none;
+            }
+            .body-header {
+                margin-top: 25px;
+              //  padding-left: 10px;
+                padding: 24px 25px 14px 10px;
+                h1 {
+                    font-size: 24px;
+                    padding-left: 0px;
+                }
+                h1 span {
+                    display: none;
+                }
+            }
+            .have-account {
+                padding: 20px 15px;
+              
+                .reg-txt {
+                    margin-left: -4px;
+                }
+                .col-lg-6:first-child {
+                    padding-right: 0;
+                    padding-left: 0px;
+                }
+                h3 {
+                    font-size: 15.5px;
+                    margin-left: -4px;
+                 
+                }
+                .login {
+                    padding: 0 0 30px;
+                    form {
+                        width: 100%;
+                    }
+                    .custom-checkbox {
+                        display: none;
+                    }
+                    .forgot-credentials {
+                        display: none;
+                    }
+                    .forgot-credentialsMobile {
+                        display: block;
+                        padding-left: 0;
+                    }
+                    .editable {
+                        display: none;
+                    }
+                    .btn-blue {
+                        font-size: 13px;
+                        width: 100%;
+                    }
+                }
+                .wordwrapper {
+                    position: relative;
+                    width: 100%;
+                    border-bottom: 1px solid $pale-grey;
+                    z-index: 0;
+                    text-align: center;
+                    margin-bottom: 30px;
+                    left: 0;
+                    top: 0;
+                    .word {
+                        top: -10px;
+                        position: absolute;
+                        padding: 0 10px;
+                        left: 45%;
+                        right: auto;
+                    }
+                }
+                .btn-white {
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                    font-size: 13px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width: 1150px) {
+    .body {
+        .body-bock {
+            .body-header {
+                padding: 10px 15px;
+                h1 {
+                    font-size: 18px;
+                }
+            }
+            .have-account {
+                padding: 15px 0;
+                .col-lg-6:first-child,
+                .col-lg-6:last-child {
+                    padding-right: 6%;
+                }
+              
+                h3,p {
+                    font-size: 12px;
+                }
+                .login {
+                    padding-top: 0px;
+                    .custom-checkbox {
+                        margin-bottom: 0 !important;
+                        label {
+                            min-height: 0px;
+                            align-items: center;
+                        }
+                    }
+                
+                    .editable span {
+                        font-size: 8px;
+                    }
+                    .custom-control-label,
+                    .forgot-credentials,
+                    .forgot-credentialsMobile {
+                        font-size: 11px;
+                    }
+                    .btn-blue, .btn-white {
+                        font-size: 11px;
+                    }
+                    h3{ font-size: 12px;}
+                    .btn-blue {
+                        margin-top: 8px;
+                    }
+                }
+                h3, li, p {
+                    font-size: 12px;
+                }
+                .wordwrapper {
+                    top: 20px;
+                    bottom: 0px;
+                    .word {
+                        font-size: 13px;
+                    }
+                }
+                .btn-white {
+                    font-size: 11px;
+                    margin-top: 35px;
+                }
+                .btn-white-error {
+                    margin-top: 52px;
+                }
+            }
+        }
+    }   
+}
+
+@media (min-width:1101px) and (max-width: 1500px) {
+    .body-bock {
+        .have-account {
+            h3 {
+                font-size: 16px;
+            }
+            .col-lg-6:first-child,
+            .col-lg-6:last-child {
+                padding-right: 6%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .body {
+        .m-welcome {
+            .have-line {
+                position: unset;
+                width: 100%;
+                bottom: 10px;
+                border-top: 1px solid gray;
+                .have-line-text {
+                    line-height: 1;
+                    padding-left: 25px;
+                }
+            }
+            .have-account {
+                .login {
+                    .btn-blue {
+                        margin-top: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    .body {
+        .m-welcome {
+            .left-image {
+                img {
+                    height: 440px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        .m-query-reg {
+            .body-header {
+                h1 {
+                    font-size: 16px;
+                    padding-top: 12px;
+                }
+            }
+            .query-form {
+                form {
+                    padding-left: 15px;
+                    padding-right: 20px;
+                    padding-bottom: 15px;
+                }
+            }
+            .have-account {
+                padding: 15px 0;
+            }
+        }
+    }
+} 

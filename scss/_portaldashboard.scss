@@ -1,0 +1,908 @@
+@import './_variable.scss';
+.portal-make-payment-wrapper {
+    box-shadow: 5px 5px 14px 0px $gray;
+    border-radius: 4px;
+    height: 100%;
+    .portal-payment-image-sec {
+        position: relative;
+        img {
+            width: 100%;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        .portal-payment-section-content {
+            color: $white;
+            position: absolute;
+            bottom: 10px;
+            left: 25px;
+            p {
+                margin-bottom: 3px;
+                .travelerId {
+                    font-size: 10px;
+                }
+            }
+            .smaller-text {
+                font-size: 12px;
+                opacity: 0.9;
+            }
+        }
+    }
+    .payment-section-short-details {
+        .two-traveller-info {
+            border-bottom: 1px solid $pale-grey;
+            padding: 14px 12px;
+            font-size: 10px;
+            color: $gray-variant;
+            @include sanspro(regular, 10px);
+            .traveler-img {
+                img {
+                    border-radius: 50%;
+                    width: 26px;
+                }
+            }
+            .traveler-2-text {
+                padding-left: 5px;
+            }
+            .days {
+                float: right;
+                padding-top: 4px;
+                i {
+                    padding-right: 5px;
+                }
+            }
+        }
+        .traveller-program-id-info {
+            padding: 5px 12px;
+        }
+        .make-payment-sec {
+            text-align: center;
+            padding: 7px;
+            .make-payment-heading {
+                padding-top: 10px;
+                h6 {
+                    @include sanspro(semibold, 18px);
+                    color: $violet;
+                    text-transform: uppercase;
+                }
+            }
+            .make-payment-btn {
+                button {
+                    padding: 8px 50px;
+                    background-color: $blue-variant;
+                    color: $white;
+                    border-radius: 25px;
+                    text-transform: uppercase;
+                    @include sanspro(semibold, 18px);
+                }
+            }
+        }
+    }
+}
+
+.register-new-program {
+    .portal-payment-image-sec {
+        img {
+            opacity: 0.2;
+        }
+    }
+    .traveller-program-id-info {
+        label {
+            @include sanspro(semibold, 14px);
+            display: inline;
+        }
+        input {
+            border: 1px solid $pale-grey;
+            padding-left: 5px;
+            // margin-top: 10px;
+        }
+    }
+    .register-new-program-btn {
+        padding: 0px 12px 7px;
+        text-align: center;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .start-reg-text {
+        color: $gray-black;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(0%, -50%);
+        h3 {
+            @include corpid(regular, 30px);
+        }
+        .start-new-adv-text {
+            //font-size: 14px;
+            @include corpid(regular, 14px);
+        }
+    }
+}
+
+.profile-main-wrapper {
+    background-color: $white;
+    padding: 0px;
+    box-shadow: 5px 5px 14px 0px rgba(202, 202, 202, 1);
+    .profile-pic-wrapper {
+        .profile-background {
+            height: 175px;
+            position: relative;
+            .profile-details {
+                position: absolute;
+                top: 65%;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                width: 100%;
+            }
+            .profile-background-image {
+                opacity: 0.2;
+                height: 100%;
+                width: 100%;
+            }
+            .profile-pic {
+                text-align: center;
+                img {
+                    width: 140px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .icons-wrapper {
+            padding: 0px 15px;
+            .profile-icons-wrap {
+                justify-content: space-around;
+                -webkit-justify-content: space-around;
+            }
+            i {
+                color: $navy-blue;
+            }
+        }
+    }
+}
+
+.profile-desc-inner {
+    margin-top: 25px;
+    color: $gray-black;
+    span {
+        display: block;
+    }
+    .name {
+        @include sanspro(regular, 20px);
+    }
+    .typeOfTraveller,
+    .travelerId {
+        @include sanspro(regular, 16px);
+    }
+    .divider {
+        width: 170px;
+        height: 1px;
+        background-color: $pale-grey;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.main-portal-dashboard {
+    background-color: $color-grey;
+    .noPadding {
+        padding: 0px;
+    }
+    .dashboard-container {
+        margin: 0px 15px;
+        .dashboard-tiles {
+            padding-right: 0px;
+        }
+        .dashboard-content-wrapper {
+            .dashboard-item-wrap {
+                background-color: $white;
+            }
+        }
+    }
+    .spacing-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .portal-active-wrapper {
+        padding: 15px;
+        box-shadow: 5px 10px 14px 0px $gray;
+    }
+    .memories-wrap {
+        padding: 15px;
+        color: $gray-variant;
+        h2 {
+            @include corpid(bold, 36px);
+        }
+        p {
+            @include corpid(regular, 28px);
+        }
+        .memories-text {
+            padding-left: 6%;
+        }
+    }
+    .dashboardWrapper {
+        background-color: $white;
+        margin-top: 15px;
+        padding: 30px 40px;
+        h2 {
+            color: $gray-black;
+        }
+        .portal-left-icons {
+            color: $gray-tab;
+            font-size: 20px;
+            text-align: right;
+            i {
+                font-size: 30px;
+            }
+        }
+        .portal-right-desc {
+            color: $silver-variant;
+            h6 {
+                border-bottom: 1px solid $silver;
+                padding-bottom: 10px;
+                font-size: 16px;
+                color: $strong-blue;
+                margin-bottom: 4px;
+            }
+        }
+        .closePaymentDescWrapper {
+            text-align: right;
+            .closePaymentDescBtn {
+                border: none;
+                background: none;
+                text-transform: uppercase;
+                color: $blue-variant;
+                cursor: pointer;
+                @include sanspro(semibold, 16px);
+                i {
+                    padding-left: 3px;
+                }
+            }
+        }
+    }
+    .inner-space-around {
+        margin-top: 20px;
+    }
+}
+
+.main-portal-dashboard {
+    .alert {
+        color: $white;
+        border-radius: 0px;
+        padding: 25px;
+        margin-bottom: 0px;
+        border-top: none;
+        border-bottom: none;
+        i {
+            color: $white;
+            padding-right: 10px;
+            font-size: 18px;
+        }
+        a {
+            color: $grayish-black;
+            opacity: 1;
+            text-shadow: none;
+        }
+        .msgInfo {
+            @include myriadpro(regular, 18px);
+            margin-right: 20px;
+        }
+        &.payment-due-info-msg {
+            background-color: $sky-blue;
+            border-left: 10px solid $blue-shade;
+            .makePaymentButton {
+                display: inline-block;
+                padding: 8px 35px;
+                @include border-radius(25px);
+                @include roboto(regular, 16px);
+                background-color: $blue-shade;
+            }
+        }
+        &.meeting-schedule-msg {
+            background-color: $dim-orange;
+            border-left: 10px solid $dark-red;
+            color: $dark-red;
+            i {
+                color: $dark-red;
+            }
+            a {
+                color: $dark-red;
+            }
+            .makePaymentButton {
+                display: inline-block;
+                padding: 8px 35px;
+                color: $white;
+                @include border-radius(25px);
+                @include roboto(regular, 16px);
+                background-color: $dark-orange;
+            }
+        }
+    }
+}
+
+.main-contacts-portal-dashboard {
+    // margin-top: 42px;
+    .portal-dashboard-contacts-wrapper {
+        .dashboard-content-wrapper {
+            margin-top: 0px;
+        }
+    }
+}
+
+.dashboardContactsWrapper {
+    background-color: $white;
+    margin-top: 20px;
+    box-shadow: 5px 5px 7px 0px $gray;
+    .contactsTabSection {
+        .nav.nav-tabs {
+            box-shadow: none;
+            .nav-link.active {
+                border-bottom: 3px solid $dark-orange;
+            }
+        }
+        .dashboardTravellerContactsRow {
+            padding: 20px;
+            .traveller-individual {
+                padding: 15px;
+            }
+            .imageSec {
+                float: left;
+                margin-right: 6px;
+                img {
+                    border: 1px solid $light-silver;
+                    @include border-radius(50%);
+                    width: 72px;
+                }
+            }
+            .eachTravellerDetails {
+                display: inline-block;
+                margin-left: 5px;
+                .travellerName {
+                    @include sanspro(bold, 14px);
+                    color: $brown;
+                }
+                .travellerBasicInfo {
+                    @include sanspro(regular, 12px);
+                    color: $violet;
+                    &.travellerType {
+                        text-transform: uppercase;
+                    }
+                }
+                .travellerId {
+                    @include sanspro(regular, 12px);
+                }
+                i {
+                    color: $pale-grey;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.main-portal-dashboard {
+    .dashboard-container {
+        .contacts-portal-dashboard-profile {
+            .name {
+                color: $black-shade;
+                @include sanspro(regular, 22px);
+            }
+            .portal-dashboard-contacts-divider {
+                width: 170px;
+                height: 1px;
+                background-color: $pale-grey;
+                margin: 8px auto;
+            }
+        }
+        .portal-contact-additional-info {
+            color: $dim-grey;
+            @include sanspro(regular, 12px);
+            span {
+                display: block;
+            }
+        }
+    }
+    .add-new-contact-portal {
+        color: $light-orange;
+        @include sanspro(semibold, 16px);
+        padding-top: 10px;
+        margin-right: 20px;
+        i {
+            padding-right: 8px;
+        }
+    }
+}
+
+@media only screen and (min-width:1751px) {
+    .profile-main-wrapper {
+        .profile-pic-wrapper {
+            .profile-background {
+                .profile-details {
+                    .profile-desc-inner {
+                        margin: 25px 0px;
+                        .divider {
+                            margin: 20px auto;
+                        }
+                    }
+                }
+                .profile-pic {
+                    img {
+                        width: 170px;
+                    }
+                }
+            }
+        }
+    }
+    &.contacts-portal-dashboard-profile {
+        .profile-pic-wrapper {
+            .profile-background {
+                .profile-details {
+                    .profile-desc-inner {
+                        margin-bottom: 13px
+                    }
+                }
+            }
+        }
+    }
+    .portal-make-payment-wrapper {
+        // min-height: 415px;
+        .payment-section-short-details {
+            .make-payment-sec {
+                padding: 18px 7px;
+                .make-payment-btn {
+                    button {
+                        padding: 6px 40px;
+                    }
+                }
+            }
+        }
+    }
+    .past-memories-content {
+        min-height: 415px;
+    }
+}
+
+@media only screen and (min-width:1551px) and (max-width:1750px) {
+    .portal-make-payment-wrapper {
+        // min-height: 383px;
+        .payment-section-short-details {
+            .make-payment-sec {
+                .make-payment-btn {
+                    button {
+                        padding: 6px 40px;
+                    }
+                }
+            }
+        }
+    }
+    .past-memories-content {
+        min-height: 383px;
+    }
+    .profile-main-wrapper {
+        .profile-pic-wrapper {
+            .profile-background {
+                height: 170px;
+                .profile-details {
+                    top: 62%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1441px) and (max-width:1550px) {
+    .portal-make-payment-wrapper {
+        // min-height: 345px;
+        .payment-section-short-details {
+            .make-payment-sec {
+                .make-payment-btn {
+                    button {
+                        padding: 6px 40px;
+                    }
+                }
+            }
+        }
+    }
+    .past-memories-content {
+        min-height: 345px;
+    }
+    .profile-main-wrapper {
+        .profile-pic-wrapper {
+            .profile-background {
+                height: 160px;
+                .profile-details {
+                    top: 56%;
+                }
+            }
+            .profile-desc-inner {
+                .divider,
+                .portal-dashboard-contacts-divider {
+                    width: 140px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .portal-make-payment-wrapper {
+        // min-height: 290px;
+        .payment-section-short-details {
+            .make-payment-sec {
+                margin: 0px;
+                padding: 12px 0px;
+                .make-payment-heading {
+                    h6 {
+                        font-size: 14px;
+                    }
+                }
+                .make-payment-btn {
+                    button {
+                        padding: 4px 28px;
+                    }
+                }
+            }
+        }
+    }
+    .past-memories-content {
+        min-height: 290px;
+    }
+    .profile-main-wrapper {
+        .profile-pic-wrapper {
+            .profile-background {
+                height: 145px;
+                .profile-pic img {
+                    width: 120px;
+                }
+            }
+            .profile-desc-inner {
+                margin-top: 0px;
+                .divider,
+                .portal-dashboard-contacts-divider {
+                    width: 145px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .portal-make-payment-wrapper {
+        // min-height: 272px;
+        &.register-new-program {
+            .traveller-program-id-info {
+                input {
+                    margin-top: 5px;
+                }
+            }
+        }
+        .payment-section-short-details {
+            .make-payment-sec {
+                margin: 0px;
+                padding: 12px 0px;
+                .make-payment-heading {
+                    padding-top: 0px;
+                    h6 {
+                        font-size: 14px;
+                    }
+                }
+                .make-payment-btn {
+                    button {
+                        padding: 1px 20px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .two-traveller-info {
+                padding: 14px 4px;
+                .days {
+                    padding-top: 7px;
+                }
+            }
+        }
+    }
+    .past-memories-content {
+        min-height: 272px;
+    }
+    .profile-main-wrapper {
+        .profile-pic-wrapper {
+            .profile-background {
+                height: 125px;
+                .profile-pic img {
+                    width: 110px;
+                }
+            }
+            .profile-desc-inner {
+                margin-top: 0px;
+                .divider,
+                .portal-dashboard-contacts-divider {
+                    width: 135px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+    .portal-make-payment-wrapper {
+        // min-height: 245px;
+        .payment-section-short-details {
+            .make-payment-sec {
+                //margin: 0px;
+                padding: 12px 0px;
+                .make-payment-heading {
+                    padding-top: 0px;
+                    h6 {
+                        font-size: 14px;
+                    }
+                }
+                .make-payment-btn {
+                    button {
+                        padding: 1px 18px;
+                    }
+                }
+            }
+            //.register-new-program-btn {}
+            .two-traveller-info {
+                padding: 10px 0px;
+                .days {
+                    padding-top: 0px;
+                }
+            }
+        }
+    }
+    .past-memories-content {
+        min-height: 245px;
+    }
+    .profile-main-wrapper {
+        .profile-pic-wrapper {
+            .profile-background {
+                height: 115px;
+                .profile-details {
+                    top: 35%;
+                }
+                .profile-pic img {
+                    width: 100px;
+                }
+            }
+            .profile-desc-inner {
+                margin-top: 15px;
+                .divider,
+                .portal-dashboard-contacts-divider {
+                    width: 130px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .portal-make-payment-wrapper {
+        // min-height: 200px;
+        .payment-section-short-details {
+            .make-payment-sec {
+                padding: 8px 4px;
+                .make-payment-heading {
+                    padding: 0px;
+                    h6 {
+                        font-size: 14px;
+                        padding-top: 6px;
+                    }
+                }
+                .make-payment-btn {
+                    margin-top: 10px;
+                    button {
+                        padding: 1px 12px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .traveller-program-id-info {
+                label {
+                    font-size: 10px;
+                }
+                input {
+                    margin-top: 5px;
+                }
+            }
+            .two-traveller-info {
+                padding: 10px 2px;
+                font-size: 8px;
+                .days {
+                    padding-top: 0px;
+                }
+                .traveler-img {
+                    img {
+                        width: 12px;
+                    }
+                }
+            }
+            // .register-new-program {
+            //     .register-new-program-btn {
+            //         img {
+            //             width: 85%;
+            //         }
+            //     }
+            // }
+        }
+    }
+    .past-memories-content {
+        min-height: 200px;
+    }
+    .profile-main-wrapper {
+        .profile-pic-wrapper {
+            .profile-background {
+                .profile-background-image {
+                    height: 85px;
+                }
+                .profile-details {
+                    top: 30%;
+                    .profile-pic img {
+                        width: 80px;
+                    }
+                }
+            }
+            .profile-desc-inner {
+                margin-top: 15px;
+                .divider,
+                .portal-dashboard-contacts-divider {
+                    width: 110px;
+                }
+                .name {
+                    font-size: 18px;
+                }
+                .typeOfTraveller,
+                .travelerId {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .main-portal-dashboard {
+        .m-profile-pic-wrap {
+            // margin-top: 8px;
+            padding: 15px;
+            background: $white;
+            .profile-pic {
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                    border: 1px solid $pale-grey;
+                }
+            }
+            .icons-wrapper {
+                justify-content: space-around;
+                -webkit-justify-content: space-around;
+                margin: 20px 5px 10px;
+                padding-top: 15px;
+                border-top: 1px solid $pale-grey;
+                i {
+                    color: $navy-blue;
+                }
+            }
+        }
+        .portal-make-payment-wrapper {
+            .payment-section-short-details {
+                .make-payment-sec {
+                    .make-payment-btn {
+                        button {
+                            padding: 5px 40px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .memories-wrap {
+            background-color: $white;
+        }
+        .register-new-program {
+            .start-reg-text {
+                h3 {
+                    font-size: 24px;
+                }
+                .start-new-adv-text {
+                    font-size: 13px;
+                }
+            }
+        }
+        .dashboardWrapper {
+            padding: 25px;
+            .portal-left-icons {
+                text-align: center;
+                i {
+                    font-size: 25px;
+                }
+            }
+        }
+        .dashboard-container {
+            margin: 0px;
+            .dashboard-tiles {
+                padding: 15px;
+                padding-top: 0px;
+            }
+            .dashboard-content-wrapper {
+                // margin-top: 18px;
+                .dashboard-item-wrap {
+                    background: none;
+                    .mobile-tab {
+                        margin-top: 20px;
+                        .filter-tabs {
+                            padding: 14px 40px;
+                            background: $white;
+                            border: 1px solid $light-grey;
+                            .labelFilter {
+                                @include sanspro(regular, 12px);
+                                color: $gray-variant;
+                                text-transform: uppercase;
+                            }
+                            .details {
+                                @include sanspro(semibold, 16px);
+                                color: $grayish-black;
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+                    .portal-active-wrapper {
+                        background: $white;
+                        padding-bottom: 40px;
+                    }
+                    .profile-tab-left {
+                        .nav.nav-tabs {
+                            .nav-link.active {
+                                border: none;
+                            }
+                        }
+                    }
+                    .register-new-button-mobile {
+                        padding: 0px 15px;
+                        margin-top: -25px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .profile-desc-inner {
+            margin-top: 0px;
+            .name {
+                font-size: 18px;
+            }
+            .typeOfTraveller,
+            .travelerId {
+                font-size: 14px;
+            }
+        }
+        .spacing-container {
+            padding: 0px;
+        }
+    }
+    .main-contacts-portal-dashboard {
+        // margin-top: 42px;
+        .alert {
+            .makePaymentButton {
+                display: table;
+            }
+        }
+        .portal-dashboard-contacts-wrapper {
+            .dashboard-content-wrapper {
+                margin-top: 0px;
+                .dashboard-item-wrap {
+                    .m-profile-pic-wrap {
+                        margin-top: 0px;
+                    }
+                }
+            }
+            &.dashboard-container {
+                .dashboard-tiles {
+                    padding-top: 0px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.m-mob-step-wizard{
+	background: #fff;
+    border-bottom: 1px solid $light-grey;
+    box-shadow: 0 1px 8px $light-grey;
+    position: fixed;
+    top: 38px;
+    z-index: 1;
+    width: 100%;
+	ul {
+		list-style-type: none;
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		padding: 10px;
+		
+		li{
+			display: inline-block;
+			text-align: center;
+			padding: 0 5px;
+			color: $gray-tab;
+			font-size: 12px;
+			cursor: pointer;
+			
+			&.active{
+				color: $grayish-black;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 768px){
+	.m-mob-step-wizard{
+		display:none;
+	}
+}

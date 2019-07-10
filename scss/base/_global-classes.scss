@@ -1,0 +1,26 @@
+.alert-primary {
+    font-family: SansPro-Semibold;
+    width: 100%;
+    color: #3A5DAE;
+    border-left: 7px solid #3A5DAE;
+    border-radius: 0 8px 8px 0;
+}
+
+label.error,
+label.error-custom {
+    color: $red !important;
+}
+
+input.error-custom,
+select.error-custom {
+    border: 1px solid $red;
+}
+a:hover {
+    text-decoration: none !important;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

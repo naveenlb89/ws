@@ -1,0 +1,604 @@
+.m-confirmation-details {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    .saving {
+        display: none;
+    }
+    .confirmation {
+        border: 1px solid $pale-grey;
+        margin-bottom: 25px;
+        background: $white;
+        h1 {
+            padding: 10px 20px;
+            @include box-shadow(0px, 2px, 7px, $light-grey);
+            @include corpid(bold, 24px);
+        }
+    }
+    .saving,
+    .editing {
+        cursor: pointer;
+    }
+    .confirmation-alert {
+        .confirmation-primary {
+            border: 0;
+            border-left-color: $light-purple;
+            @include border-radius-value(0, 4px, 4px, 0);
+            border-left-width: 5px;
+            padding: 12px 15px;
+            border-left-style: solid;
+        }
+        .confirmation-danger {
+            border: 0;
+            border-left-color: $red;
+            @include border-radius-value(0, 4px, 4px, 0);
+            border-left-width: 5px;
+            color: $red;
+            padding: 12px 15px;
+            border-left-style: solid;
+        }
+        .btn-alert {
+            border: 1px solid $red;
+            color: $red;
+            background: $white;
+            @include border-radius(30px);
+            padding: 9px 8px;
+            width: 100%;
+            @include sanspro(semibold, 13px);
+        }
+        .btn-confirm {
+            border: 2px solid $blue;
+            color: $white;
+            background: $blue;
+            @include border-radius(30px);
+            padding: 4px 8px;
+            width: 100%;
+            @include sanspro(semibold, 16px);
+        }
+        &.info-alert {
+            padding: 0;
+        }
+        h6 {
+            margin-bottom: 3px;
+            @include sanspro(bold, 16px);
+        }
+        p {
+            margin-bottom: 0;
+            @include sanspro(regular, 11px);
+        }
+    }
+    .confirmation-block {
+        padding: 10px 35px;
+        .traveller {
+            border: 1px solid $light-brown;
+            border-top: 0;
+            margin-bottom: 10px;
+            padding: 0 0 10px;
+            &.traveller-parent {
+                margin-bottom: 3px;
+            }
+            &.saved {
+                .traveller-details {
+                    label {
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+                    input,
+                    select {
+                        display: none;
+                    }
+                    .form-group {
+                        margin-bottom: 0;
+                    }
+                    .entered-val {
+                        @include sanspro(semibold, 11px);
+                        float: right;
+                        margin-top: 1px;
+                    }
+                }
+            }
+            &.edit {
+                box-shadow: 0 7px 14px $gray-tab;
+                .traveller-details {
+                    input {
+                        display: block;
+                    }
+                    .entered-val {
+                        display: none;
+                    }
+                }
+                .traveller-header {
+                    span {
+                        &.editing {
+                            display: none;
+                        }
+                        &.saving {
+                            display: inline-block;
+                            color: $light-orange;
+                            button {
+                                border: none;
+                                outline: none;
+                                background-color: $pale-brown;
+                                color: $light-orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // .saving {
+        //     display: inline-block;
+        //     button {
+        //         border: none;
+        //         background-color: $pale-brown;
+        //         color: $light-orange;
+        //     }
+        // }
+        .traveller-header {
+            color: $gray-black;
+            padding: 18px 15px;
+            background: $pale-brown;
+            border-top: 1px solid $light-brown;
+            position: relative;
+            &:before {
+                content: '';
+                background: url(../assets/images/line-shadow.png) no-repeat;
+                height: 10px;
+                position: absolute;
+                bottom: -9px;
+                right: 0;
+                left: 0;
+            }
+            h4 {
+                @include corpid(regular, 23px);
+                margin-bottom: 0;
+                line-height: 1;
+            }
+            span {
+                color: $violet;
+                @include sanspro(semibold, 15px);
+            }
+            i {
+                padding-right: 5px;
+            }
+        }
+        .traveller-block {
+            padding-top: 10px;
+            margin-right: -1px !important;
+        }
+        .traveller-details {
+            >.details:nth-of-type(even) {
+                text-align: right;
+                label {
+                    font-size: 11px;
+                }
+            }
+        }
+        .traveller-details {
+            label {
+                margin-bottom: 0;
+                color: $grayish-black;
+                @include sanspro(semibold, 13px);
+            }
+            input {
+                height: 25px;
+                text-align: right;
+                padding: 5px 7px;
+                border-radius: 8px;
+                @include sanspro(regular, 13px);
+            }
+        }
+        .traveller-address {
+            padding: 0 0 0 45px;
+        }
+        .address-row {
+            margin: 0;
+            padding: 10px 0 10px 5px;
+            border-bottom: 1px solid $pale-grey;
+            &.totals {
+                text-align: right;
+                border-bottom: 0;
+            }
+            &:first-child {
+                padding-top: 0;
+            }
+            .address-block {
+                padding: 0;
+            }
+            .address-price {
+                text-align: right;
+                padding-left: 0;
+            }
+            h5 {
+                margin-bottom: 0;
+                color: $grayish-black;
+                @include sanspro(semibold, 15px);
+                i {
+                    font-size: 10px;
+                    padding-left: 3px;
+                }
+            }
+            p {
+                margin-bottom: 0;
+                color: $grayish-black;
+                @include sanspro(regular, 13px);
+            }
+            span {
+                color: $grayish-black;
+                @include sanspro(regular, 13px);
+            }
+            &.cancel-any {
+                border-left-style: solid;
+                border-left-color: $red;
+                border-left-width: 5px;
+                padding-left: 10px;
+                .address-price {
+                    .check-container {
+                        display: inline-block;
+                        position: relative;
+                        padding-left: 10px;
+                        margin-bottom: 9px;
+                        cursor: pointer;
+                        margin-left: 2px;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                    }
+                    /* Hide the browser's default checkbox */
+                    .check-container input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+                    /* Create a custom checkbox */
+                    .checked-checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 10px;
+                        width: 10px;
+                        border: 1px solid #CB0000;
+                    }
+                    /* Create the checkmark/indicator (hidden when not checked) */
+                    .checked-checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                    /* Show the checkmark when checked */
+                    .check-container input:checked~.checked-checkmark:after {
+                        display: block;
+                    }
+                    /* Style the checkmark/indicator */
+                    .check-container .checked-checkmark:after {
+                        left: 2px;
+                        top: 0px;
+                        width: 5px;
+                        height: 7px;
+                        border: solid #CB0000;
+                        border-width: 0 2px 2px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+                h5,
+                p {
+                    color: $red;
+                }
+                span {
+                    font-size: 12px;
+                    color: $red;
+                }
+            }
+            .total {
+                margin-bottom: 0;
+                @include sanspro(bold, 13px);
+            }
+        }
+        .relation-row {
+            margin: 0;
+            .parent {
+                text-align: right;
+                padding-left: 0;
+            }
+        }
+        .traveller-payment-details {
+            padding: 0;
+        }
+        .relation-row {
+            p {
+                font-size: 13px;
+                margin-bottom: 0;
+                color: $grayish-black;
+                @include sanspro(regular, 13px);
+            }
+            span {
+                @include sanspro(semibold, 12px);
+            }
+        }
+        .traveller-payment-details {
+            border: 1px solid $light-brown;
+            border-top: 0;
+            margin-bottom: 10px;
+            padding: 0 0 10px;
+            color: $grayish-black;
+            h4 span {
+                @include sanspro(regular, 9px);
+            }
+        }
+        .row-payment {
+            margin: 0;
+            padding: 7px 0;
+        }
+        .payment-plan,
+        .payment-details {
+            padding: 10px 15px;
+        }
+        .row-payment .card-left,
+        .paymen-plan .card-left {
+            padding-right: 0;
+            @include sanspro(semibold, 15px);
+        }
+        .payment-address {
+            .card-left,
+            .card-right {
+                width: 50%;
+            }
+        }
+        .row-payment .card-right,
+        .paymen-plan .card-right {
+            text-align: right;
+            @include sanspro(regular, 12px);
+        }
+        .payment-total-price {
+            border: 1px solid $pale-grey;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            @include roboto(regular, 15px);
+            .row-total {
+                padding: 3px 0;
+            }
+        }
+        .row-total.total-price {
+            @include roboto(bold, 16px);
+        }
+        .confirmation-info {
+            border: 0;
+            border-left-color: $dark-green;
+            @include border-radius(0);
+            border-left-width: 5px;
+            padding: 12px 15px;
+            border-left-style: solid;
+        }
+    }
+    .prev-btn {
+        border: 1px solid $blue;
+        color: $blue;
+        background: $color-grey;
+        padding: 6px;
+        width: 18%;
+        @include border-radius(30px);
+        @include sanspro(semibold, 16px);
+    }
+    .confirm-btn {
+        border: 1px solid $blue;
+        color: $white;
+        background: $blue;
+        padding: 6px;
+        width: 25%;
+        @include border-radius(30px);
+        @include sanspro(semibold, 16px);
+    }
+}
+
+@media(max-width: 767px) {
+    .m-confirmation-details {
+        margin-top: 82px;
+        margin-bottom: 15px;
+        padding: 0;
+        .confirmation-alert {
+            .btn-alert {
+                float: right;
+                font-size: 10px;
+                width: 50%;
+                padding: 7px 0;
+            }
+            .confirmation-info {
+                margin-bottom: 0;
+            }
+        }
+        .confirmation {
+            margin-bottom: 15px;
+            border: 0;
+            h1 {
+                @include box-shadow-none(none);
+                margin-bottom: 0;
+                padding: 10px 15px;
+            }
+            .confirmation-block {
+                padding: 0 15px;
+            }
+        }
+        .confirmation-block {
+            .confirmation-alert,
+            .confirmation-p-0 {
+                padding: 0;
+            }
+            .confirmation {
+                border: 0;
+                margin-bottom: 0;
+            }
+            .confirmation-primary,
+            .confirmation-danger {
+                margin-bottom: 0;
+                @include border-radius(0);
+            }
+            .traveller {
+                border: 0;
+                padding: 0;
+                margin-bottom: 5px;
+            }
+            .traveller-header {
+                border: 1px solid $light-brown;
+                @include box-shadow-none(none);
+                h4 {
+                    font-size: 18px;
+                }
+                span {
+                    font-size: 11px;
+                }
+            }
+            .traveller-block {
+                margin-right: 0 !important;
+            }
+            .traveller-details {
+                padding-bottom: 15px;
+                .details {
+                    &:nth-of-type(odd) {
+                        label {
+                            @include sanspro(regular, 11px);
+                        }
+                    }
+                }
+            }
+            .traveller-payment-details {
+                border: 0;
+                margin-bottom: 0;
+                padding: 0;
+            }
+            .traveller-address {
+                padding: 0;
+                border-top: 1px solid $pale-grey;
+                &.student2 {
+                    border-top: 0;
+                }
+            }
+            .address-row {
+                padding: 10px 15px;
+                &:first-child {
+                    padding-top: 10px;
+                }
+                .address-price {
+                    padding: 0;
+                }
+                &.totals {
+                    padding-right: 0;
+                }
+            }
+            .relation-row {
+                padding: 3px 0;
+            }
+            .payment-total-price {
+                border: 0;
+                background-color: $color-grey;
+                padding: 10px 0 0;
+                margin-bottom: 0;
+                .total-price-details {
+                    background: $white;
+                    padding: 15px !important;
+                }
+            }
+        }
+        .confirmation-btn {
+            padding: 0 15px;
+            .prev-btn,
+            .confirm-btn {
+                width: 35%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .m-confirmation-details {
+        padding: 0;
+        .confirmation {
+            h1 {
+                padding: 10px 15px;
+            }
+            .btn-confirm {
+                font-size: 12px;
+                padding: 8px;
+            }
+            .btn-alert {
+                font-size: 10.8px;
+                padding: 8px;
+            }
+        }
+        .confirmation-block {
+            padding: 10px;
+            .traveller-header {
+                padding: 8px 15px;
+                h4 {
+                    font-size: 23px;
+                }
+                span {
+                    font-size: 15px;
+                }
+            }
+            .traveller-address {
+                padding: 0 0 0 15px;
+            }
+            .traveller-details label {
+                font-size: 12px;
+            }
+            .address-row {
+                h5 {
+                    font-size: 13px;
+                }
+                p {
+                    font-size: 10px;
+                }
+                &.cancel-any span {
+                    font-size: 8px;
+                }
+            }
+            .row-payment .card-left,
+            .paymen-plan .card-left {
+                font-size: 13px;
+            }
+            .row-payment .card-right,
+            .paymen-plan .card-right {
+                font-size: 10px;
+            }
+            .payment-total-price {
+                font-size: 14px;
+                .total-price {
+                    font-size: 14px;
+                }
+            }
+            .confirmation-alert {
+                p {
+                    font-size: 9px;
+                }
+            }
+        }
+        .confirmation-traveller-details {
+            .traveller-details-left {
+                padding-right: 8px;
+            }
+            .traveller-details-right {
+                padding-left: 8px;
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) and (max-width:1200px) {}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .m-confirmation-details {
+        .confirmation-block {
+            .traveller-details,
+            .traveller-address {
+                label {
+                    display: inline-block;
+                    min-height: auto;
+                }
+            }
+        }
+    }
+}

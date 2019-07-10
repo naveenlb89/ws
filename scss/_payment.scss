@@ -1,0 +1,990 @@
+@import './_variable.scss';
+.m-payment {
+    background-color: $color-grey;
+    .ui-datepicker-trigger {
+        background: none;
+        border: none;
+        position: absolute;
+        right: 5px;
+        top: 30px;
+        color: $gray-variant;
+        outline: none;
+    }
+    .wrap-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .payment-option-section {
+        .payment-header {
+            box-shadow: 0 8px 6px -9px black;
+            padding: 15px;
+            .addPaymentMethod {
+                display: inline-block;
+            }
+            .secureCheckout {
+                color: $blue;
+                @include sanspro(bold, 16px);
+                margin-top: 2px;
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .price {
+            padding-bottom: 10px;
+            @include corpid(semibold, 18px);
+            span {
+                display: inline-block;
+                color: $gray-black;
+            }
+        }
+        .dollor-price {
+            float: right;
+            font-weight: 500;
+        }
+        .accordion-wrapper {
+            padding: 15px;
+        }
+        .card {
+            border: 1px solid transparent;
+            .card-header {
+                border: 1px solid $gray;
+                @include border-radius(10px);
+                &#headingThree {
+                    display: none;
+                    &.show {
+                        display: block;
+                    }
+                }
+            }
+            .card-body {
+                color: $grayish-black;
+                padding: 15px 10px 0px 10px;
+                .billing-account {
+                    margin-bottom: 0;
+                }
+                .debit-card label i {
+                    font-weight: normal;
+                    padding-bottom: 3px;
+                }
+                .primary-account {
+                    margin: 0;
+                    .check-container {
+                        display: inline-block;
+                        position: relative;
+                        padding-left: 20px;
+                        margin-bottom: 0;
+                        min-height: auto;
+                        cursor: pointer;
+                        margin-left: 2px;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                    }
+                    .check-container input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+                    .checked-checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 12px;
+                        width: 12px;
+                        border: 1px solid $grayish-black;
+                    }
+                    .checked-checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                    .check-container input:checked~.checked-checkmark:after {
+                        display: block;
+                    }
+                    .check-container .checked-checkmark:after {
+                        left: 3px;
+                        top: 0px;
+                        width: 5px;
+                        height: 8px;
+                        border: solid $grayish-black;
+                        border-width: 0 2px 2px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+                .min-deposit {
+                    padding-left: 10px;
+                    @include sanspro(semibold-it, 12px);
+                }
+                .chooseDepositAmount {
+                    @include sanspro(semibold, 16px);
+                }
+            }
+            .promo-code {
+                display: none;
+                .promo-block {
+                    display: inline-block;
+                    @include sanspro(regular, 13px);
+                }
+                .promo-block-submit {
+                    display: inline-block;
+                    float: right;
+                    .field button {
+                        padding: 4px 20px;
+                        color: $white;
+                        background: $orange;
+                        border: none;
+                        border-radius: 5px;
+                        @include sanspro(semibold, 12px);
+                    }
+                    .promo-submit {
+                        float: left;
+                        border: 1px solid $gray-variant;
+                        margin-right: 15px;
+                        border-radius: 5px;
+                    }
+                    .tick-mark {
+                        border-right: 1px solid $gray-variant;
+                        font-size: 16px;
+                        padding: 0px 5px;
+                        color: $green;
+                    }
+                    .promo-num {
+                        display: inline-block;
+                        width: 95px;
+                        color: $gray-variant;
+                        text-align: right;
+                        padding-right: 3px;
+                        @include sanspro(regular, 12px);
+                    }
+                }
+            }
+        }
+    }
+    .payment-option-section {
+        background-color: $white;
+        padding: 0px 10px;
+        h2 {
+            color: $gray-black;
+            margin: 0;
+        }
+        .add-promo-code {
+            padding: 15px 0px;
+        }
+        .promo-code {
+            padding: 15px 0px;
+        }
+        .promotional-code {
+            border-top: 1px solid $gray;
+        }
+    }
+    .add-promo-code .fa.fa-plus {
+        background: $violet;
+        padding: 2px;
+        color: $white;
+        margin-right: 5px;
+        border-radius: 3px;
+        font-size: 11px;
+    }
+    .promo-add {
+        padding-left: 5px;
+        vertical-align: middle;
+        @include sanspro(regular, 13px);
+    }
+    .pricing-summary-section {
+        margin-bottom: 20px;
+        .summary-wrap {
+            background-color: $white;
+            box-shadow: 0 8px 6px -10px $black;
+            color: $gray-black;
+            padding-bottom: 18px;
+            @include corpid(bold, 25px);
+            padding: 15px;
+            margin-bottom: 2px;
+        }
+    }
+    .summary-details-wrap {
+        margin-bottom: 20px;
+        background-color: $white;
+        p {
+            color: $grayish-black;
+            @include corpid(regular, 14px);
+            margin-bottom: 0px;
+            line-height: 1;
+        }
+        .foot-note-text {
+            font-size: 12px;
+            line-height: 1;
+            margin-top: 3px;
+        }
+        .traveller-count-wrap {
+            background-color: $light-gray;
+            padding: 15px 10px;
+            p {
+                // font-size: 16px;
+                color: $gray-black;
+                @include corpid(bold, 16px);
+            }
+        }
+        .count-details-wrap {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .price-details-wrap {
+            margin: 10px 15px 10px 15px;
+            border-bottom: 1px solid $gray;
+            background-color: $white;
+            padding-bottom: 10px;
+            .cost {
+                text-align: right;
+                p {
+                    @include sanspro(regular, 14px);
+                }
+            }
+        }
+        .price-details-wrap:last-child {
+            border-bottom: 0px solid $gray;
+        }
+    }
+    .card {
+        margin-bottom: 10px;
+        #collapseOne {
+            p {
+                @include corpid(semibold-it, 12px);
+            }
+        }
+        #autoPayDeductCollapse,
+        #collapseThree {
+            p {
+                margin-top: 8px;
+                color: $gray-variant;
+                @include corpid(semibold-it, 12px);
+            }
+            .intial-payment {
+                p {
+                    margin-bottom: 2px;
+                    @include sanspro(semibold, 12px);
+                }
+            }
+            #autoPayDeductCollapse {
+                p {
+                    font-size: 12px;
+                    margin-top: 8px;
+                    color: $gray-variant;
+                }
+            }
+            .payment-schedule-header {
+                display: block;
+                margin-bottom: 0px;
+                margin-top: 20px;
+                border-top: 1px solid $pale-grey;
+                padding-top: 10px;
+                @include corpid(semibold, 16px);
+            }
+            .payment-schedule {
+                background-color: $purple;
+                @include border-radius(5px);
+                padding: 10px;
+                margin-top: 10px;
+                @include corpid(semibold-it, 12px);
+                .text-right {
+                    font-weight: 500;
+                    font-style: italic;
+                }
+                span {
+                    color: $gray-black;
+                }
+                .blue-box-text {
+                    @include corpid(semibold-it, 12px);
+                }
+                .this-amount {
+                    @include sanspro(italic, 12px);
+                }
+            }
+            .other-payment a {
+                display: block;
+                color: $orange;
+                text-align: right;
+                margin-top: 10px;
+                text-decoration: none;
+                @include sanspro(bold, 12px);
+            }
+            .address-text-container {
+                .paperBillingAddress {
+                    margin-top: 5px;
+                }
+                .addressDetails {
+                    font-size: 14px;
+                }
+            }
+        }
+        .pay-more {
+            color: $green;
+            display: block;
+            margin: 10px 0px 5px 0px;
+            @include corpid(semibold, 12px);
+        }
+    }
+    .card-header {
+        padding: 0px;
+        .btn-link {
+            color: $blue;
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 20px;
+            line-height: 1;
+            @include corpid(bold, 20px);
+            text-decoration: none;
+            box-shadow: 5px 5px 7px #CCCCCC;
+        }
+        .btn-link:hover {
+            text-decoration: none;
+        }
+    }
+    .card-header {
+        .btn-link.collapsed {
+            color: $dark-gray;
+            @include corpid(regular, 20px);
+            box-shadow: 5px 5px 7px transparent;
+        }
+        .btn-link:after {
+            font-family: 'FontAwesome';
+            content: "\f078";
+            float: right;
+            color: $gray-black;
+            font-size: 12px;
+            padding-top: 3px;
+        }
+        .btn-link.collapsed:after {
+            font-family: 'FontAwesome';
+            content: "\f054";
+            color: $gray-variant;
+            float: right;
+            font-size: 12px;
+            padding-top: 5px;
+        }
+    }
+    .btn-link:hover {
+        text-decoration: none;
+    }
+    .button-section {
+        margin: 20px 0;
+        padding: 0px 10px;
+        .btn {
+            border: 1px solid $blue;
+            color: $blue;
+            padding: 6px 0px;
+            width: 200px;
+            @include sanspro(semibold, );
+            @include border-radius(20px);
+        }
+        .btn.save-continue {
+            background-color: $blue;
+            color: $white;
+            float: right;
+        }
+    }
+    .intial-payment {
+        font-size: 13px;
+        .initial-payment-inner {
+            display: inline-block;
+            border: 1px solid $gray-variant;
+            border-radius: 5px;
+            width: 100%;
+            .dolar-mark {
+                border-right: 1px solid $gray-variant;
+                padding: 0px 5px;
+                color: $gray-variant;
+                @include corpid(semibold, 14px);
+            }
+            .promo-num {
+                display: inline-block;
+                color: $gray-variant;
+                text-align: right;
+                padding-right: 5px;
+                @include corpid(semibold, 12px);
+                float: right;
+            }
+        }
+    }
+    .remaining-balance-desktop {
+        background-color: $white;
+        border-top: 1px solid $color-grey;
+        color: $black;
+        margin-top: 15px;
+        .remaining-balance-wrapper {
+            padding: 5px 15px;
+            font-size: 13px;
+            .price-list {
+                padding-right: 0;
+                @include corpid(regular, 13px);
+                &.total-list {
+                    @include corpid(bold, 13px);
+                }
+            }
+            .cost {
+                text-align: right;
+                @include roboto(regular, 13px);
+                &.total-balance {
+                    @include roboto(bold, 16px);
+                }
+            }
+        }
+    }
+    .slidecontainer {
+        width: 100%;
+        margin-top: 30px;
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 10px;
+            background: $gray;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            @include border-radius(5px);
+        }
+        .slider:hover {
+            opacity: 1;
+        }
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: $white;
+            cursor: pointer;
+            @include border-radius(50%);
+            border: 1px solid $black;
+        }
+    }
+    .promo-deposit {
+        display: block;
+        border-top: 1px solid $gray;
+        padding-top: 10px;
+    }
+    #collapseThree {
+        .emails-paper {
+            margin-bottom: 15px;
+        }
+        .radio-button-wrap {
+            p {
+                font-style: inherit;
+                margin-bottom: 5px;
+                @include sanspro(semibold, 12px);
+            }
+            label {
+                @include sanspro(regular, 13px);
+            }
+            .custom-radio {
+                display: inline-block;
+                margin-right: 20px;
+                vertical-align: top;
+            }
+        }
+        .email-text-container {
+            font-size: 12px;
+            label {
+                @include sanspro(regular, 11px);
+            }
+            .thanks-text {
+                color: $green;
+                margin-top: 7px;
+                display: block;
+                @include sanspro(semibold, 12px);
+            }
+            input {
+                @include sanspro(regular, 11px);
+            }
+        }
+    }
+    .custom-control-label::before {
+        background-color: $white;
+    }
+    .custom-control-input:checked~.custom-control-label::before {
+        color: $green;
+        border: 2px solid $green;
+        background-color: $green-variant;
+    }
+    .custom-radio .custom-control-input:checked~.custom-control-label::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%234FAC43'/%3e%3c/svg%3e");
+    }
+    .tooltip-inner {
+        max-width: 200px;
+        padding: 3px 8px;
+        color: $black;
+        text-align: center;
+        background-color: $white;
+        ;
+        border-radius: .25rem;
+    }
+}
+
+.m-payment-mobile {
+    background-color: $color-grey;
+    margin-top: 82px;
+    .ui-datepicker-trigger {
+        background: none;
+        border: none;
+        position: absolute;
+        color: #717171;
+        outline: none;
+        top: 29px;
+        right: 6px;
+        color: $gray-variant;
+        outline: none;
+    }
+    .debit-card label i {
+        font-weight: normal;
+    }
+    .primary-account {
+        margin: 0;
+        .check-container {
+            display: inline-block;
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 0;
+            min-height: auto;
+            cursor: pointer;
+            margin-left: 2px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .check-container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        .checked-checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 12px;
+            width: 12px;
+            border: 1px solid $grayish-black;
+        }
+        .checked-checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        .check-container input:checked~.checked-checkmark:after {
+            display: block;
+        }
+        .check-container .checked-checkmark:after {
+            left: 3px;
+            top: 0px;
+            width: 5px;
+            height: 8px;
+            border: solid $grayish-black;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+    .payment-header {
+        padding: 15px;
+        border-bottom: 1px solid $light-grey;
+        background-color: $white;
+        h2 {
+            color: $gray-black;
+        }
+    }
+    .payment-header-container {
+        background-color: $white;
+    }
+    .payment-tab {
+        margin-top: 15px;
+        color: $gray-variant;
+        .fa-info-circle,
+        .fa-leaf {
+            color: $green;
+            font-size: 13px;
+        }
+        .thanks-text {
+            color: $green;
+            font-size: 13px;
+            margin-top: 5px;
+            display: block;
+        }
+        ul {
+            border: 1px solid $blue;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .nav-tabs .nav-item {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+            border-radius: 5px;
+            a {
+                @include sanspro(semibold,
+                16px);
+                border: none;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .active {
+                background-color: $blue;
+                color: $white;
+            }
+        }
+        .tab-content {
+            p {
+                font-size: 14px;
+                margin-top: 8px;
+                color: $grayish-black;
+                border-top: 1px dashed $light-grey;
+                padding-top: 10px;
+                font-weight: 500;
+            }
+            .alert-primary {
+                p {
+                    color: $light-purple;
+                }
+            }
+        }
+        .promo-container {
+            border-top: 1px solid $light-grey;
+            margin-top: 5px;
+            padding: 20px 0px;
+        }
+        .promotional-code {
+            .fa.fa-plus {
+                color: $white;
+                background: $violet;
+                padding: 1px 3px;
+                font-size: 10px;
+                margin-right: 10px;
+                height: auto;
+                line-height: 14px;
+            }
+            color:$grayish-black;
+            .promo-block {
+                display: inline-block;
+                color: $grayish-black;
+            }
+            .promo-block-submit {
+                display: inline-block;
+                float: right;
+            }
+            .promo-submit {
+                float: left;
+                border: 1px solid $gray-variant;
+                margin-right: 15px;
+                border-radius: 5px;
+                .tick-mark {
+                    border-right: 1px solid $gray-variant;
+                    font-size: 16px;
+                    padding: 0px 5px;
+                    color: $green;
+                }
+            }
+            button {
+                padding: 4px 12px;
+                color: $white;
+                background: $orange;
+                border: none;
+                border-radius: 5px;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+    .total-wrapper-mobile {
+        .price-mobile {
+            padding-bottom: 30px;
+            font-size: 18px;
+            span {
+                display: inline-block;
+                color: $grayish-black;
+                font-size: 20px;
+            }
+            .dollor-price-mobile {
+                float: right;
+                font-weight: 500;
+                color: $grayish-black;
+                font-size: 26px;
+            }
+        }
+    }
+    .pricing-summary-mobile {
+        background: $white;
+        .card {
+            border: none;
+            .card-header {
+                background: $white;
+                padding: 0px;
+                .btn-link {
+                    padding: 15px;
+                    display: block;
+                    width: 100%;
+                    text-decoration: none;
+                    .show-more,
+                    .show-less {
+                        color: #f46d0e;
+                        font-size: 12px;
+                        margin-top: 12px;
+                    }
+                    .show-more {
+                        display: none;
+                    }
+                    .show-less {
+                        display: block;
+                    }
+                    &.collapsed {
+                        .show-more {
+                            display: block;
+                        }
+                        .show-less {
+                            display: none;
+                        }
+                    }
+                }
+                .pricing-summary {
+                    @include corpid(bold,
+                    25px);
+                }
+            }
+        }
+        .pricing-summary-mobile-inner {
+            padding: 0px;
+            button {
+                padding: 10px;
+                text-align: left;
+                color: $grayish-black;
+                font-weight: bold;
+            }
+        }
+    }
+    .remaining-balance-mobile {
+        background-color: $white;
+        border-top: 1px solid $color-grey;
+        color: $black;
+        box-shadow: 0 1px 8px $light-grey;
+        .remaining-balance-wrapper {
+            padding: 5px 0px;
+        }
+    }
+    .card-body {
+        color: $black;
+        padding: 0px;
+        p {
+            margin-bottom: 0px;
+        }
+        .summary-details-wrap p {
+            border: 0px;
+            font-style: inherit;
+            padding: 0px;
+            margin: 0px;
+        }
+        .traveller-count-wrap {
+            background-color: $light-gray;
+            padding: 15px 10px;
+        }
+        .price-details-wrap {
+            margin: 10px 15px 10px 15px;
+            border-bottom: 1px solid $gray;
+            background-color: $white;
+            padding-bottom: 10px;
+        }
+        .price-details-wrap:last-child {
+            border-bottom: none;
+        }
+    }
+    .pay-in-mothly-container {
+        .automated-mobile-text {
+            color: #425563;
+            padding: 10px 0px;
+            border-top: 1px dashed #CCCCCC;
+            border-bottom: 1px dashed #CCCCCC;
+            display: block;
+            clear: both;
+        }
+        .promo-code {
+            display: none;
+        }
+        .promotional-code {
+            border-top: 1px solid $gray;
+            border-bottom: 1px solid $gray;
+            padding: 15px 0px;
+            font-size: 16px;
+        }
+        .promo-deposit {
+            display: block;
+            color: $black;
+            margin-top: 10px;
+        }
+        .chooseDepositAmount {
+            @include sanspro(semibold,
+            14px);
+            color: $grayish-black;
+        }
+        .maximum-deposit {
+            display: block;
+            margin: 5px 0px 5px 0px;
+            @include sanspro(semibold-it,
+            10px);
+            color: $grayish-black;
+        }
+        .pay-more {
+            color: $green;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 22px;
+        }
+        .initial-payment-inner {
+            display: inline-block;
+            border: 1px solid $gray-variant;
+            border-radius: 5px;
+        }
+        .dolar-mark {
+            border-right: 1px solid $gray-variant;
+            font-size: 14px;
+            padding: 0px 5px;
+            color: $gray-variant;
+        }
+        .promo-num {
+            padding-left: 20px;
+            padding-right: 10px;
+            font-size: 12px;
+            color: $gray-variant;
+        }
+        .slidecontainer {
+            width: 100%;
+            margin-top: 20px;
+            .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 10px;
+                background: $gray;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+                @include border-radius(5px);
+            }
+            .slider:hover {
+                opacity: 1;
+            }
+            .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                background: $white;
+                cursor: pointer;
+                @include border-radius(50%);
+                border: 1px solid $black;
+            }
+        }
+        p.payment-schedule-header {
+            border-top: 1px solid $light-grey;
+            font-style: normal;
+        }
+        .total-payment-today-mobile {
+            color: $grayish-black;
+            font-size: 14px;
+            padding: 15px 0px;
+            align-items: center;
+            border-bottom: 1px solid $light-grey;
+            margin-bottom: 10px;
+            .amount {
+                @include sanspro(semibold,
+                20px);
+            }
+        }
+        .payment-schedule {
+            background-color: $purple;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 12px;
+            color: $gray-black;
+            .blue-box-text {
+                font-weight: 700;
+                font-style: italic;
+            }
+        }
+    }
+    .space-container {
+        background-color: #dee6e8;
+        height: 15px;
+    }
+    .other-payment a {
+        display: block;
+        color: $orange;
+        font-size: 12px;
+        text-align: right;
+        margin-top: 10px;
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+    .payment-tab .tab-content p {
+        border: 0px;
+        margin-top: 0px;
+    }
+    .other-payment-text {
+        font-size: 12px;
+        color: $gray-black;
+        font-weight: bold;
+    }
+    .invoice-container {
+        .billing-address {
+            color: $black;
+            font-weight: bold;
+        }
+        .form-group.form-check {
+            margin: 0px;
+        }
+        .billing-address-text {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .invoice-container .payment-tab .nav-tabs .nav-item .nav-link.active {
+        background-color: $gray-tab;
+        color: $white;
+    }
+    .invoice-container .payment-tab .nav-tabs .nav-item a {
+        color: $gray-tab;
+        padding: 3px;
+    }
+    .invoice-container .payment-tab ul {
+        border: 1px solid $gray-tab;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    .due-deposit {
+        color: $dark-gray;
+        font-size: 12px;
+    }
+}
+
+.mob-buttons-section {
+    margin: 20px 15px;
+}
+
+@media(min-width: 768px) and (max-width:991px) {
+    .paymentPricingSummary {
+        padding: 0;
+    }
+}
+
+@media(min-width: 768px) and (max-width:1200px) {
+    .m-payment .ui-datepicker-trigger {
+        top: 39px;
+    }
+}

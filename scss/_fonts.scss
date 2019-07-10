@@ -1,0 +1,135 @@
+/*sansPro*/
+
+@font-face {
+    font-family: 'SansPro-Black';
+    src: url('../assets/fonts/sansPro/SourceSansPro-Black.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-Black.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-Black.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-Black.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SansPro-Black-It';
+    src: url('../assets/fonts/sansPro/SourceSansPro-BlackIt.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-BlackIt.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-BlackIt.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-BlackIt.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-BlackIt.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SansPro-Bold';
+    src: url('../assets/fonts/sansPro/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-Bold.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-Bold.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-Bold.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SansPro-Bold-It';
+    src: url('../assets/fonts/sansPro/SourceSansPro-BoldIt.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-BoldIt.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-BoldIt.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-BoldIt.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-BoldIt.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SansPro-ExtraLight';
+    src: url('../assets/fonts/sansPro/SourceSansPro-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-ExtraLight.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-ExtraLight.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-ExtraLight.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-ExtraLight.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SansPro-ExtraLight-It';
+    src: url('../assets/fonts/sansPro/SourceSansPro-ExtraLightIt.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-ExtraLightIt.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-ExtraLightIt.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-ExtraLightIt.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-ExtraLightIt.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SansPro-Italic';
+    src: url('../assets/fonts/sansPro/SourceSansPro-It.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-It.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-It.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-It.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-It.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SansPro-Light';
+    src: url('../assets/fonts/sansPro/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-Light.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-Light.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-Light.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SansPro-Light-It';
+    src: url('../assets/fonts/sansPro/SourceSansPro-LightIt.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-LightIt.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-LightIt.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-LightIt.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-LightIt.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SansPro-Regular';
+    src: url('../assets/fonts/sansPro/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-Regular.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-Regular.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-Regular.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SansPro-Semibold';
+    src: url('../assets/fonts/sansPro/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-Semibold.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-Semibold.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-Semibold.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-Semibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SansPro-Semibold-It';
+    src: url('../assets/fonts/sansPro/SourceSansPro-SemiboldIt.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/sansPro/SourceSansPro-SemiboldIt.ttf.woff2') format('woff2'), url('../assets/fonts/sansPro/SourceSansPro-SemiboldIt.otf.woff') format('woff'), url('../assets/fonts/sansPro/SourceSansPro-SemiboldIt.ttf') format('truetype'), url('../assets/fonts/sansPro/SourceSansPro-SemiboldIt.otf') format('opentype');
+}
+
+
+/*corpid*/
+
+@font-face {
+    font-family: 'Corpid-Black';
+    src: url('../assets/fonts/corpid/CorpidC1sSCd-Black.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/corpid/CorpidC1sSCd-Black.woff') format('woff'), url('../assets/fonts/corpid/CorpidC1sSCd-Black.ttf') format('truetype'), url('../assets/fonts/corpid/CorpidC1sSCd-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Corpid-Black-It';
+    src: url('../assets/fonts/corpid/CorpidC1sSCd-BlackItalic.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/corpid/CorpidC1sSCd-BlackItalic.woff') format('woff'), url('../assets/fonts/corpid/CorpidC1sSCd-BlackItalic.ttf') format('truetype'), url('../assets/fonts/corpid/CorpidC1sSCd-BlackItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Corpid-Bold';
+    src: url('../assets/fonts/corpid/CorpidC1sSCd-Bold.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/corpid/CorpidC1sSCd-Bold.woff') format('woff'), url('../assets/fonts/corpid/CorpidC1sSCd-Bold.ttf') format('truetype'), url('../assets/fonts/corpid/CorpidC1sSCd-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Corpid-Bold-It';
+    src: url('../assets/fonts/corpid/CorpidC1sSCd-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/corpid/CorpidC1sSCd-BoldItalic.woff') format('woff'), url('../assets/fonts/corpid/CorpidC1sSCd-BoldItalic.ttf') format('truetype'), url('../assets/fonts/corpid/CorpidC1sSCd-BoldItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Corpid-Heavy';
+    src: url('../assets/fonts/corpid/CorpidC1sSCd-Heavy.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/corpid/CorpidC1sSCd-Heavy.woff') format('woff'), url('../assets/fonts/corpid/CorpidC1sSCd-Heavy.ttf') format('truetype'), url('../assets/fonts/corpid/CorpidC1sSCd-Heavy.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Corpid-Heavy-It';
+    src: url('../assets/fonts/corpid/CorpidC1sSCd-HeavyItalic.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/corpid/CorpidC1sSCd-HeavyItalic.woff') format('woff'), url('../assets/fonts/corpid/CorpidC1sSCd-HeavyItalic.ttf') format('truetype'), url('../assets/fonts/corpid/CorpidC1sSCd-HeavyItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Corpid-Light';
+    src: url('../assets/fonts/corpid/CorpidC1sSCd-Light.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/corpid/CorpidC1sSCd-Light.woff') format('woff'), url('../assets/fonts/corpid/CorpidC1sSCd-Light.ttf') format('truetype'), url('../assets/fonts/corpid/CorpidC1sSCd-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CorpidC1sSCd-Light-It';
+    src: url('../assets/fonts/corpid/CorpidC1sSCd-LightItalic.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/corpid/CorpidC1sSCd-LightItalic.woff') format('woff'), url('../assets/fonts/corpid/CorpidC1sSCd-LightItalic.ttf') format('truetype'), url('../assets/fonts/corpid/CorpidC1sSCd-LightItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Corpid-Regular';
+    src: url('../assets/fonts/corpid/CorpidC1sSCd-Regular.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/corpid/CorpidC1sSCd-Regular.woff') format('woff'), url('../assets/fonts/corpid/CorpidC1sSCd-Regular.ttf') format('truetype'), url('../assets/fonts/corpid/CorpidC1sSCd-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Corpid-Regular-It';
+    src: url('../assets/fonts/corpid/CorpidC1sSCd-RegularItalic.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/corpid/CorpidC1sSCd-RegularItalic.woff') format('woff'), url('../assets/fonts/corpid/CorpidC1sSCd-RegularItalic.ttf') format('truetype'), url('../assets/fonts/corpid/CorpidC1sSCd-RegularItalic.otf') format('opentype');
+}
+
+
+/*roboto*/
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../assets/fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/roboto/Roboto-Regular.woff2') format('woff2'), url('../assets/fonts/roboto/Roboto-Regular.woff') format('woff'), url('../assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../assets/fonts/roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/roboto/Roboto-Bold.woff2') format('woff2'), url('../assets/fonts/roboto/Roboto-Bold.woff') format('woff'), url('../assets/fonts/roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+
+/*myriadPro*/
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../assets/fonts/myriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/myriadPro/MyriadPro-Regular.woff2') format('woff2'), url('../assets/fonts/myriadPro/MyriadPro-Regular.woff') format('woff'), url('../assets/fonts/myriadPro/MyriadPro-Regular.ttf') format('truetype');
+}

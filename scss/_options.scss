@@ -1,0 +1,144 @@
+@import './_variable.scss';
+
+// this scss will be updated
+.reg-option .reg-container {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px $light-grey;
+	
+	.reg-firstDiv h5 {
+		color: #323C53;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    margin-left: 20px;
+	}
+	.reg-firstDiv {
+    border-bottom: 1px solid lightgray;
+    
+	}
+	.reg-secondDiv .reg-content{
+		background-color: #e2ebfd;
+    color: #3A5DAE;
+    margin: 15px 40px 0px 40px;
+    border-left: 5px solid;
+    border-radius: 0 10px 10px 0;
+    padding: 0 15px 0 15px;
+    font-size: 15px;
+	}
+	.reg-thirdDiv .reg-content-text{
+	margin: 40px 40px 0px 40px;
+    padding: 0 15px 0 15px;
+    font-size: 15px;
+    color: #717171;
+	}
+	
+	
+.reg-TermConditions h5{
+    font-weight: bold;
+    color: #717171;
+}
+.reg-TermConditions p {
+    font-size: 15px;
+    color: #717171;
+}
+.reg-sixthDiv .reg-Participant h5{
+    font-weight: bold;
+    color: #717171;
+}
+
+.reg-sixthDiv .reg-Participant p{
+    font-size: 15px;
+    color: #717171;
+}
+.downloadButton .downloadBtn {
+        
+        border: none;
+        background: none;
+        padding: 5px 0 0 70px;
+        cursor: pointer;
+        font-size: 13px;
+        color: #7A99AC;
+        
+}
+.printButton .printBtn {
+        border: none;
+        background: none;
+        padding: 5px 0 0 70px;
+        cursor: pointer;
+        font-size: 13px;
+        color: #7A99AC;
+        
+}
+.check-boxDiv {
+    padding-bottom: 50px;
+}
+.check-boxDiv .checkbox {
+    font-size: 12px;
+}
+
+.check-boxDiv .checkbox {
+    padding-left: 100px;
+    padding-top: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.checkbox input{
+    display: inline-block;
+    margin-right: 30px;
+}
+.button-group {
+    margin-left: 100px;
+    margin-top: 30px;
+    
+}
+.button-group .save-btn {
+    float: right;
+    color: #ffffff;
+    border: 1px solid;
+    width: 200px;
+    border-radius: 30px;
+    background-color: grey;
+}
+.button-group .prev-btn {
+    float: left;
+    color: #417EF2;
+    border: 1px solid #417EF2;
+    width: 200px;
+    border-radius: 30px;
+}
+
+
+
+/*for scroll*/
+
+.scrollbar-cyan::-webkit-scrollbar-track {
+    
+    background-color: #F5F5F5;
+    border-radius: 10px; }
+    
+    .scrollbar-cyan::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5; }
+    
+    .scrollbar-cyan::-webkit-scrollbar-thumb {
+  
+    background-color: #808080; 
+}
+    
+
+    .example-1 {
+    position: relative;
+    overflow-y: scroll;
+    width: 1000px;
+    height: 320px;
+    margin: 40px 40px 0px 40px;
+    padding: 0 15px 0 15px;
+    border: 1px solid;
+    border-radius: 10px 0 0 10px; }
+
+     
+            
+
+
+  
+            
+}

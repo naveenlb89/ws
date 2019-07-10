@@ -1,0 +1,13 @@
+@import './_variable.scss';
+
+body{
+    background: $body-background;
+    margin: 0;
+	font-size: 1em;
+	line-height: 1.4;
+	color:#323C53;
+}
+
+p{
+    @include sanspro(regular, 14px);
+}

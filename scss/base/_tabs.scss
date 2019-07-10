@@ -1,0 +1,20 @@
+.horizontal-tabs-section {
+    &.nav.nav-tabs {
+        border-bottom: 1px solid $light-grey;
+        @include box-shadow(5px, 2px, 7px, $light-grey);
+        .nav-item {
+            margin-bottom: 0px;
+        }
+        .nav-link {
+            color: $grayish-black;
+            border: none;
+            padding: 8px 0px;
+            margin: 0px 20px;
+            @include sanspro(semibold, 18px);
+        }
+        .nav-link.active {
+            color: $grayish-black;
+            border-bottom: 3px solid $light-orange;
+        }
+    }
+}

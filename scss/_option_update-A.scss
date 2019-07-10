@@ -1,0 +1,457 @@
+.m-optionpage {
+    .option-container {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 25px;
+            .row {
+                background-color: #fff;
+            }
+         margin-top: 20px;
+        .t-c-row {
+            hr {
+                border: none;
+                width: 100%;
+                padding-top: 45px;  
+                margin-top: 0;
+                margin: -50px auto 10px;
+                box-shadow: 0px 5px 5px -5px #CCCCCC;
+                border-bottom: 1px solid #CCCCCC;
+            }
+            .terms-conditions {
+                margin: 10px;
+                @include corpid(regular, 25);
+                color: $gray-black;
+                padding: 5px;
+            }
+        }
+        .agreement-heading {
+            padding-left: 51px;
+            padding-right: 50px;
+            .agreement-content {
+                margin: 10px 0px;
+                line-height: 22px;
+                padding-bottom: 1px;
+                color: $light-purple;
+                background-color: #cce5ff;
+                border-left: 5px solid $light-purple;
+                border-radius: 0px 5px 5px 0px;
+                p {
+                    padding-left: 20px;
+                    padding-top: 10px;
+                    @include sanspro(semibold, 16px);
+                }
+            }
+        }
+        .section-content {
+            line-height: 20px;
+            padding-top: 10px;
+            padding-left: 36px;
+            padding-right: 34px;
+             p{
+                margin-bottom: 0;
+                font-size: 15px;
+                line-height: 2;
+                color: $grayish-black;
+            }
+        }
+        .t-c-domestic {
+            border: 1px solid #808080;
+            margin: 20px 35px 0px 35px;
+            padding: 10px 5px 10px 15px;
+            @include border-radius-value(10px, 0, 0, 10px);
+            /*for scroll section*/
+            .scrollbar-section {
+                margin: 0;
+                border: 0;
+                @include border-radius(0);
+                .card-body {
+                    padding: 0;
+                    h2 {
+                        font-weight: bold;
+                        color: $grayish-black;
+                        @include roboto(regular, 25px);
+                    }
+                    p {
+                        @include roboto(regular, 14px);
+                    }
+                    .para-subheading {
+                        font-size: 15px;
+                        color: $grayish-black;
+                    }
+                }
+                .scrollbar-section .card-body p span {
+                    font-weight: bold;
+                }
+            }
+            .scrollbar-cyan::-webkit-scrollbar {
+                width: 12px;
+            }
+            .scrollbar-cyan::-webkit-scrollbar-thumb {
+                background-color: #A6A9AB;
+            }
+        }
+        .down-print {
+            padding: 0px 35px;
+        }
+        .download-section {
+            margin-top: 17px;
+            .fa-btn {
+                font-size: 20px;
+                color: $gray-tab;
+                padding-left: 10px;
+                cursor: pointer;
+            }
+            .text {
+                @include sanspro(semibold, 16px);
+                padding-left: 10px;
+                color: $gray-tab;
+                cursor: pointer;
+            }
+        }
+        // check button section
+        .check-section {
+            font-weight: bold;
+            padding-left: 65px;
+            display: inherit;
+            margin-top: 20px;
+            @include roboto(regular, 11px);
+            color: $grayish-black;
+            .custom-control {
+                padding-bottom: 15px;
+            }
+            .custom-control-label {
+                padding: 4px 8px;
+            }
+            
+            .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23007bff'/%3e%3c/svg%3e"); }
+                .custom-control-input:checked ~ .custom-control-label::before {
+                    background-color: #fff;
+                } 
+                .custom-control-label::after {
+                    position: absolute;
+                    top: 0.0rem;
+                    left: -1.75rem;
+                    display: block;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    content: "";
+                    background: no-repeat 50% / 50% 50%;   
+                }
+         }
+        // toggle button section
+        .toggle-section {
+            padding-top: 10px;
+            text-align: right;
+            .last-space {
+                padding-right: 25px;
+                .btn-space {
+                    padding: 0;
+                    text-align: right;
+                }
+            }
+            span {
+                display: inline-block;
+            }
+            .agree-req {
+                margin-top: 7px;
+                padding-bottom: 25px;
+                text-align: left;
+                color: $black;
+                @include sanspro(bold, 13px);
+               .txt-clr {
+                    color: #F36400;
+                    font-style: italic;
+                }
+            }
+            .iagree {
+                padding-top: 0px;
+                padding-bottom: 28px;
+                vertical-align: middle;
+                @include myriadpro(regular, 16px);
+            }
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 70px;
+                height: 30px;
+                padding-top: 21px;
+                .input {
+                    opacity: 0;
+                    width: 0;
+                }
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                }
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    width: 26px;
+                    height: 26px;
+                    left: 15px;
+                    bottom: 2px;
+                    background-color: $white;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                    transform: translate(-50%, 0%);
+                }
+                input:checked+.slider {
+                   background-color: #F36400;
+                   height: 30px;
+                   width: 70px;
+                }
+                input:focus+.slider {
+                    box-shadow: 0 0 1px blue;
+                }
+                input:checked+.slider:before {
+                    -webkit-transform: translateX(26px);
+                    -moz-transform: translateX(26px);
+                    -ms-transform: translateX(26px);
+                    transform: translateX(26px);
+                }
+            }
+        }
+        .toggle-button {
+            margin-left: 130px;
+            .slider.round {
+                border-radius: 35px;
+            }
+            .slider.round:before {
+                border-radius: 50%;
+            }
+        }
+    }
+    //save and previous button section
+    .button-section {
+        margin: 0px 0px 40px 0;
+        padding: 0px;
+        .previous {
+            color: $blue;
+            border: 1px solid $blue;
+            background-color: $color-grey;
+            width: 200px;
+            border-radius: 20px;
+            padding: 6px 0px;
+            outline: none;
+        }
+        .save-continue {
+            color: $white;
+            cursor: pointer;
+            width: 200px;
+            border-radius: 20px;
+            padding: 6px;
+            border: 1px solid $blue;
+            background-color: $blue;
+            outline: none;
+        }
+        .save-continue-disabled {
+            color: $white;
+            cursor: unset;
+            width: 200px;
+            border-radius: 20px;
+            padding: 6px;
+            border: 1px solid $pale-grey;
+            background-color: $pale-grey;
+        }
+    }
+}
+
+// for mobile 
+@media screen and (max-width:767px) {
+    .m-optionpage {
+        margin-top: 40px;
+        .mob-buttons-section {
+            margin: 20px 0;
+        }
+        .option-container {
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 0;
+                .row-gap{
+                    margin-bottom: 15px;
+                    padding-bottom: 15px;
+                }
+            
+            .t-c-row {
+                hr{
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+                .terms-conditions {
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 5px;
+                    .t-c-heading {
+                        font-size: 14px;
+                        padding: 5px 0px 10px 0px;
+                    }
+                }
+            }
+            .agreement-heading {
+                padding: 0px 15px;
+                .agreement-content {
+                    #para {
+                        font-size: 13px;
+                    }
+                }
+            }
+            .section-content {
+                padding: 0;
+            }
+            .t-c-domestic {
+                margin: 10px 0 0;
+                .scrollbar-section {
+                    padding: 0px;
+                    margin: 9px 0px 0px 0px;
+                    .card-body {
+                        padding: 7px;
+                        h2 {font-size: 14px;}
+                    }
+                }
+            }
+            .down-print {
+                padding: 0px 10px;
+                .download-section {
+                    margin-left: 0;
+                    padding: 0px;
+                    padding-bottom: 15px;
+                    .fa-print {
+                        padding-left: 20px;
+                    }
+                }
+            }
+            .radio-section {
+                border-top: 1px solid #ccc;
+            }
+            .toggle-print {
+                padding-bottom: 20px;
+            }
+            .check-section {
+                padding-left: 10px;
+            }
+            .agreement-content {
+                padding-left: 0px;
+                p {
+                    font-size: 13px;
+                }
+            }
+            .toggle-section {
+                .agree-req {
+                    margin-left: 0px;
+                    padding-right: 0px;
+                    padding-bottom: 15px;
+                    font-size: 11px;
+                }
+                .last-space {padding-right: 0px;
+                    .btn-space {
+                        padding: 0;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .button-section {
+            .previous,
+            .save-continue,
+            .save-continue-disabled {
+                width: 120px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .m-optionpage {
+        .option-container {
+            background-color: $white;
+            .section-content {
+                padding-left: 20px;
+                padding-right: 21px;
+            }
+            .agreement-heading {
+                padding-left: 31px;
+                padding-right: 31px;
+            }
+            .t-c-row {
+                hr{
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+                
+                .terms-conditions {
+                }
+            }
+            .toggle-section {
+                .agree-req {
+                    margin-left: 0px;
+                    font-size: 12px;
+                    padding-right: 0px;
+                }
+            }
+        }
+        .button-section {
+            margin: 20px 0px 40px 0;
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1204px) {
+    .m-optionpage {
+        .option-container {
+            .section-content { padding-right: 21px;}
+            .toggle-section {
+                .switch {
+                    margin-right: 10px;
+                    .slider {
+                        bottom: 5px;
+                        width: 70px;
+                        height: 30px;
+                    }
+                }
+                .last-space {
+                    .btn-space {
+                        div {
+                            text-align: left;
+                        }
+                    }
+                }
+                .iagree {
+                    font-size: 13px;
+                }
+            }
+            .download-section {
+                .text {
+                    font-size: 14px;
+                }
+                .fa-btn {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .m-optionpage {
+        .option-container {
+            .toggle-section {
+                .switch {
+                    width: 60px;
+                }
+                .iagree {
+                    font-size: 13px;
+                    padding-left: 0px;
+                }
+            }
+        }
+    }   
+}

@@ -1,0 +1,246 @@
+@import './_variable.scss';
+
+.m-optionpage {
+    .option-container {
+        background-color: $white;
+        .t-c-row{
+            box-shadow: 0px 5px 5px -6px $pale-grey;
+            
+            .terms-conditions {
+                margin: 10px;
+                font-family: $corpidRegular;
+                color: $gray-black;
+            }
+        }
+
+
+        .t-c-domestic {
+            margin-top: 30px;
+            .scrollbar-section {
+               
+                 margin: auto;
+                 width: 95%;
+                 height: 320px;
+                 padding: 0 5px 0 5px;
+                 border: 1px solid #808080;
+                 border-radius: 10px 0 0 10px;
+            
+                .card-body{
+                    h3 {
+                    font-weight: bold;
+                    color: $grayish-black;
+                    font-family: $corpidRegular;
+                    } 
+                    #para-subheading {
+                        font-size: 15px;
+                    }
+                    #para-content {
+                    font-size: 14px;
+                    color: $grayish-black;
+                    }
+                }
+
+                .scrollbar-section .card-body p span {
+                    font-weight: bold;
+                }              
+
+            }
+            
+     
+                 .scrollbar-cyan::-webkit-scrollbar {
+                     width: 12px;
+                 }
+     
+                 .scrollbar-cyan::-webkit-scrollbar-thumb {
+   
+                     background-color: #A6A9AB; 
+                 }
+        }
+
+        .download-section {
+            margin-left: 40px;
+            margin-top: 18px;
+            margin-bottom: 30px;
+            .fa-btn {
+                font-size: 15px;
+                 color: $gray-tab;
+                 padding-left: 10px;
+            }
+            .text {
+                font-size: 13px;
+                padding-left: 3px;
+                color: $gray-tab;
+            }
+        }
+        .toggle-section{
+            padding-top: 10px;
+            span{
+                display: inline-block;
+            }            
+            .agree-req {
+                margin-top: 7px;
+                font-size: 13px;
+                font-weight: bold;
+                padding-right: 30px;
+                margin-left: 77px;
+            }
+            .iagree {
+                font-size: 13px;
+                padding-top: 10px;
+            }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 55px;
+            height: 25px;
+            padding-top: 18px;
+            
+            .input { 
+                opacity: 0;
+                width: 0;
+              }
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: .4s;
+                transition: .4s;
+              }
+              .slider:before {
+                position: absolute;
+                content: "";
+                height: 18px;
+                width: 20px;
+                left: 6px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+              }
+              input:checked + .slider {
+                background-color: #F36400;
+                height: 25px;
+              }
+              
+              input:focus + .slider {
+                box-shadow: 0 0 1px #F36400;
+              }
+              
+              input:checked + .slider:before {
+                -webkit-transform: translateX(26px);
+                -ms-transform: translateX(26px);
+                transform: translateX(26px);
+              }
+        }      
+        }
+        .toggle-button {
+           
+            margin-left: 130px;
+            /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+          }
+       
+    }
+    
+    .button-section {
+        margin: 25px 0px 30px -7px;
+        padding: 0px;
+        
+        .previous {
+            color: $blue;
+            border: 1px solid $blue;
+            background-color: $color-grey;
+            width: 200px;
+            border-radius: 20px; 
+            padding: 6px 0px;
+        }
+        .save-continue {
+            color: $white;
+            cursor: pointer;
+            width: 200px;
+            border-radius: 20px;
+            padding: 6px;
+            border: 1px solid $blue;
+            background-color: $blue;
+        }
+    }
+}
+     
+            
+
+
+  
+            
+// for mobile 
+@media screen and (max-width:767px) {
+    .m-optionpage {
+        margin-top: 40px;
+        .option-container {
+            .t-c-row {
+                padding: 0 10px;
+                .terms-conditions {
+                    margin: 0;
+                    padding: 10px 0 0 ;
+                    .t-c-heading {
+                        font-size: 14px;
+                    }
+                }
+            }
+           
+            .section-content {
+                width: 100%;
+            }
+            .t-c-domestic {
+                .scrollbar-section {
+                    width: 100%;
+                    padding: 0px;
+                    .card-body {
+                        padding: 7px;
+                    }
+                }
+            }
+            .download-section {
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+
+            .toggle-section {
+                .agree-req {
+                    margin-left: 0px;
+                    padding-right: 0px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .button-section {
+            .previous, .save-continue {
+                width: 140px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .m-optionpage {
+        .option-container {
+            .toggle-section {
+                .agree-req {
+                    margin-left: 35px;
+                }
+            }
+        }
+    }
+
+}

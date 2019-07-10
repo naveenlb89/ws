@@ -1,0 +1,135 @@
+@import './_variable.scss';
+
+/* cards styles and electronic check styles*/
+
+.payments-switch {
+    padding: 0;
+}
+
+.tab-switching {
+    padding: 0 15px 3px;
+    background-image: linear-gradient(to right, $pale-grey 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 12px 1px;
+    background-repeat: repeat-x;
+}
+
+.content-tab {
+    padding: 0 15px;
+}
+
+.debit-card {
+    .card-details {
+        //width: 85%;
+        .form-row {
+            margin-bottom: 10px;
+        }
+        label {
+            @include myriadpro(regular, 11px);
+        }
+        input,
+        select {
+            @include myriadpro(regular, 11px);
+            color: $lighter-gray;
+        }
+        input::placeholder {
+            color: $lighter-gray;
+            opacity: 1;
+            /* Firefox */
+        }
+         :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $lighter-gray;
+        }
+         ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $lighter-gray;
+        }
+        .billing {
+            @include sanspro(regular, 11px);
+        }
+    }
+    .billingAddress {
+        margin-bottom: 15px;
+        label {
+            margin: 0px;
+            @include sanspro(regular, 14px);
+        }
+        .addressDetails {
+            @include sanspro(regular, 15px);
+            color: $gray-variant;
+            padding-left: 0px;
+            padding-top: 4px;
+        }
+    }
+    .card-image {
+        img {
+            width: 130px;
+        }
+    }
+    .details {
+        padding-left: 15px;
+        margin-left: 5px;
+        border: 0;
+        border-left-color: $light-purple;
+        @include border-radius-value(0, 8px, 8px, 0);
+        border-left-width: 7px;
+        border-left-style: solid;
+        p {
+            font-size: 12px;
+            margin-bottom: 0;
+            color: $light-purple;
+        }
+        h3 {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    }
+    label {
+        i {
+            font-size: 9px;
+            padding-left: 3px;
+        }
+    }
+    .echeck {
+        @include sanspro(semibold-it, 12px);
+    }
+}
+
+@media(max-width:767px) {
+    .tab-content {
+        .alert-block {
+            margin: 0;
+            .details {
+                border-radius: 0;
+                margin-left: 0;
+                p {
+                    font-size: 11px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .debit-card {
+        .card-details {
+            //width: 100%;
+            padding: 15px 0;
+            .circle {
+                i {
+                    color: $violet;
+                }
+            }
+        }
+    }
+    .m-payment-mobile {
+        .debit-card .card-details .form-row {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width:991px) {
+    .pricing {
+        padding: 0;
+    }
+}

@@ -1,0 +1,488 @@
+.m-confirmation-print {
+    .print-content {
+        @include border-radius(0);
+    }
+    .print-body {
+        padding: 15px 15px 5px;
+        .print-header {
+            border-bottom: 1px solid $pale-grey;
+            padding-bottom: 5px;
+            .check-mark {
+                span {
+                    background: $green;
+                    @include border-radius(50%);
+                    display: inline-block;
+                    padding: 12px;
+                }
+                i {
+                    font-size: 13px;
+                    color: $white;
+                }
+            }
+            .ready-travel {
+                padding-left: 10px;
+            }
+        }
+    }
+    .confirmation {
+        h1 {
+            margin-bottom: 0;
+            line-height: 1;
+            @include sanspro(bold, 24px);
+        }
+        .ready-travel {
+            p {
+                line-height: 1
+            }
+        }
+        p {
+            margin-bottom: 8px;
+        }
+    }
+    .confirmation-block {
+        .confirmation-traveller-details {
+            padding-top: 15px;
+        }
+        .traveller {
+            border: 1px solid $light-brown;
+            border-top: 0;
+            margin-bottom: 10px;
+            @include box-shadow(0px, 1px, 4px, $light-grey);
+            h4 {
+                margin-top: 5px;
+            }
+        }
+        .traveller-header {
+            color: $gray-black;
+            padding: 12px 15px;
+            border-top: 1px solid $light-brown;
+            border-bottom: 1px solid $light-brown;
+            h4 {
+                @include sanspro(semibold, 15px);
+                margin-bottom: 0;
+            }
+            button {
+                color: $green;
+                border: 1px solid $green;
+                background: $white;
+                outline: none;
+                @include border-radius(15px);
+                @include sanspro(semibold, 11px);
+                padding: 5px 15px;
+                i {
+                    padding-left: 5px;
+                }
+            }
+        }
+        .traveller-block {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .traveller-details {
+            >.details:nth-of-type(even) {
+                text-align: right;
+                label {
+                    @include sanspro(semibold, 10px);
+                }
+            }
+        }
+        .traveller-details {
+            label {
+                margin-bottom: 0;
+                color: $grayish-black;
+                @include sanspro(semibold, 12px);
+            }
+        }
+        .traveller-address {
+            padding: 0 0 0 45px;
+        }
+        .traveller-details-left {
+            padding-right: 0;
+            .order-details {
+                label {
+                    margin-bottom: 0;
+                    @include sanspro(semibold, 11px);
+                }
+                span {
+                    @include sanspro(regular, 11px);
+                }
+                button {
+                    background: $light-green;
+                    @include border-radius(8px);
+                    padding: 2px 15px 0;
+                    border: 1px solid $light-green;
+                    margin-left: 5px;
+                    @include sanspro(regular, 8px);
+                }
+                .registration-alert-success {
+                    padding-left: 0;
+                }
+                .registration-alert {
+                    background: $pale;
+                    padding: 7px;
+                    margin-bottom: 5px;
+                    color: $black;
+                    @include border-radius(2px);
+                    h6 {
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        margin-bottom: 0px;
+                        font-size: 11px;
+                        padding-left: 20px;
+                    }
+                    i {
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+        .address-row {
+            margin: 0 10px 0 0;
+            padding: 10px 0;
+            border-bottom: 1px solid $pale-grey;
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                border-bottom: 0;
+            }
+            &.student2 {
+                border-bottom: 1px solid $pale-grey;
+            }
+            .address-block {
+                padding: 0;
+            }
+            .address-price {
+                text-align: right;
+                padding-left: 0;
+            }
+            h5 {
+                margin-bottom: 0;
+                color: $grayish-black;
+                @include sanspro(semibold, 13px);
+            }
+            p {
+                margin-bottom: 0;
+                color: $grayish-black;
+                @include sanspro(regular, 11px);
+            }
+            span {
+                color: $grayish-black;
+                @include sanspro(regular, 13px);
+            }
+            .total {
+                padding-right: 15px;
+                margin-bottom: 0;
+                @include sanspro(bold, 13px);
+            }
+        }
+        .relation-row {
+            margin: 0;
+            .parent {
+                text-align: right;
+                padding-left: 0;
+            }
+        }
+        .relation-row {
+            p {
+                font-size: 13px;
+                margin-bottom: 0;
+                color: $grayish-black;
+                @include sanspro(regular, 13px);
+            }
+            span {
+                @include sanspro(semibold, 12px);
+            }
+        }
+        .traveller-payment-details {
+            border: 1px solid $light-brown;
+            border-top: 0;
+            margin-bottom: 10px;
+            color: $grayish-black;
+            .traveller-header {
+                background: $pale-brown;
+            }
+            h4 span {
+                padding-left: 15px;
+                @include sanspro(regular, 9px);
+            }
+        }
+        .row-payment {
+            margin: 0;
+            padding: 7px 0;
+        }
+        .payment-plan,
+        .payment-details {
+            padding: 10px 15px;
+        }
+        .row-payment .card-left,
+        .paymen-plan .card-left {
+            padding-right: 0;
+            @include sanspro(semibold, 11px);
+        }
+        .payment-address {
+            .card-left,
+            .card-right {
+                width: 50%;
+            }
+        }
+        .row-payment .card-right,
+        .paymen-plan .card-right {
+            text-align: right;
+            @include sanspro(regular, 11px);
+        }
+        .payment-total-price {
+            border: 1px solid $pale-grey;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            @include roboto(regular, 13px);
+            .row-total {
+                padding: 3px 0;
+            }
+        }
+        .row-total.total-price {
+            @include roboto(bold, 13px);
+        }
+        .confirmation-info {
+            border: 0;
+            border-left-color: $dark-green;
+            @include border-radius(0);
+            border-left-width: 5px;
+            padding: 12px 15px;
+            border-left-style: solid;
+        }
+    }
+    .prev-btn {
+        border: 1px solid $blue;
+        color: $blue;
+        background: $color-grey;
+        padding: 6px;
+        width: 18%;
+        @include border-radius(30px);
+        @include sanspro(semibold, 16px);
+    }
+    .confirm-btn {
+        border: 1px solid $blue;
+        color: $white;
+        background: $blue;
+        padding: 6px;
+        width: 25%;
+        @include border-radius(30px);
+        @include sanspro(semibold, 16px);
+    }
+}
+
+@media(max-width: 767px) {
+    .m-confirmation-print {
+        .print-body {
+            padding: 10px 0 0;
+            .print-header {
+                padding: 0 15px;
+                .check-mark {
+                    span {
+                        padding: 9px;
+                    }
+                }
+            }
+        }
+        .confirmation {
+            margin-bottom: 0;
+            border: 0;
+            h1 {
+                font-size: 21px;
+            }
+            .ready-travel {
+                p {
+                    font-size: 11px;
+                }
+            }
+            .confirmation-block {
+                padding: 0 15px;
+            }
+        }
+        .confirmation-block {
+            .confirmation-traveller-details {
+                padding-top: 5px;
+            }
+            .traveller-details-left,
+            .traveller-details-right {
+                padding: 0;
+            }
+            .traveller-details-left {
+                .order-details {
+                    margin: 0;
+                    .registration-alert-success {
+                        padding: 0;
+                        .registration-alert {
+                            padding: 7px 15px;
+                            margin-bottom: 0;
+                            p {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .confirmation {
+                border: 0;
+                margin-bottom: 0;
+            }
+            .traveller {
+                border: 0;
+                padding: 0;
+                margin-bottom: 5px;
+                @include box-shadow-none(none);
+            }
+            .traveller-header {
+                border: 1px solid $light-brown;
+                @include box-shadow-none(none);
+            }
+            .traveller-details {
+                padding-bottom: 15px;
+                .details {
+                    &:nth-of-type(odd) {
+                        label {
+                            @include sanspro(regular, 11px);
+                        }
+                    }
+                }
+            }
+            .traveller-payment-details {
+                border: 0;
+                margin-bottom: 0;
+                padding: 0;
+            }
+            .traveller-address {
+                padding: 0;
+                border-top: 1px solid $pale-grey;
+                &.student2 {
+                    border-top: 0;
+                }
+            }
+            .address-row {
+                padding: 10px 15px;
+                margin: 0;
+                &:first-child {
+                    padding-top: 10px;
+                }
+                &.student2 {
+                    border-bottom: 0;
+                }
+                .address-price {
+                    padding: 0;
+                }
+                .total {
+                    padding-right: 0;
+                }
+            }
+            .relation-row {
+                padding: 3px 0;
+            }
+            .payment-total-price {
+                border: 0;
+                background-color: $color-grey;
+                padding: 10px 0 0;
+                margin-bottom: 0;
+                .total-price-details {
+                    background: $white;
+                    padding: 15px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .m-confirmation-print {
+        .modal-dialog {
+            max-width: 95%;
+        }
+        .m-confirmation-details {
+            padding: 0;
+            .confirmation {
+                h1 {
+                    padding: 10px 15px;
+                }
+                .btn-confirm {
+                    font-size: 10.8px;
+                    padding: 8px;
+                }
+                .btn-alert {
+                    font-size: 10.8px;
+                    padding: 8px;
+                }
+            }
+            .confirmation-block {
+                padding: 10px;
+                .traveller-header {
+                    padding: 8px 15px;
+                }
+                .traveller-address {
+                    padding: 0 0 0 15px;
+                }
+                .traveller-details label {
+                    font-size: 12px;
+                }
+                .address-row {
+                    h5 {
+                        font-size: 13px;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                    &.cancel-any span {
+                        font-size: 8px;
+                    }
+                }
+                .row-payment .card-left,
+                .paymen-plan .card-left {
+                    font-size: 13px;
+                }
+                .row-payment .card-right,
+                .paymen-plan .card-right {
+                    font-size: 10px;
+                }
+                .payment-total-price {
+                    font-size: 14px;
+                    .total-price {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .confirmation-traveller-details {
+                .traveller-details-left {
+                    padding-right: 8px;
+                }
+                .traveller-details-right {
+                    padding-left: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) and (max-width:1200px) {}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .m-confirmation-print {
+        .m-confirmation-details {
+            .confirmation-block {
+                .traveller-details,
+                .traveller-address {
+                    label {
+                        display: inline-block;
+                        min-height: auto;
+                    }
+                }
+            }
+        }
+        .traveller-details-left,
+        .traveller-details {
+            label {
+                display: inline-block;
+                min-height: auto;
+            }
+        }
+    }
+}

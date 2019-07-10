@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+
+h1, .h1{
+	@include corpid(bold , 28px);
+}
+
+h2, .h2{
+	@include corpid(bold , 25px);
+}
+
+h3, .h3{
+	@include corpid(bold , 20px);
+}
+
+h4, .h4{
+	@include corpid(bold , 16px);
+}
+
+h5, .h5{
+	@include corpid(bold , 14px);
+}
+
+h6, .h6{
+	@include corpid(bold , 12px);
+}
+
+.subheading {
+	
+}

@@ -1,0 +1,139 @@
+/*------------------------------------*\
+    #FORMS
+\*------------------------------------*/
+
+form {
+    margin: 0;
+}
+
+
+/**
+ * Fieldset base styles
+ */
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+/**
+ * Label base styles
+ */
+
+label {
+    color: $grayish-black;
+    @include myriadpro(regular, 12px);
+}
+
+
+/**
+ * Form button, input, select, and text area base styles
+ * 1) Zero out margin and inherit font styles
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    border: 1px solid $form-fields-border;
+    border-radius: 6px;
+    &.form-control {
+        font-family: inherit;
+        border: 1px solid $form-fields-border;
+        border-radius: 6px;
+    }
+}
+
+
+/**
+ * Input and text area base styles
+ * 1) Width entire container, gray border, padding
+ */
+
+input,
+textarea {}
+
+
+/**
+ * Input areas base styles
+ * 1) Get rid of webkit appearance of these areas
+ */
+
+input[type=text],
+input[type=search],
+input[type=url],
+input[type=number],
+textarea {
+    -webkit-appearance: none;
+}
+
+
+/**
+ * Button/Submit button base styles
+ */
+
+button,
+input[type="submit"] {
+    cursor: pointer;
+}
+
+
+/**
+ * Checkboxes/Radio button base styles
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+}
+
+
+/**
+ * Search cancel button and search decoration webkit appearance none
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+.form-control {
+    border-radius: 7px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+    input,
+    select {
+        border: 1px solid $form-fields-border;
+        border-radius: 6px;
+        font-size: 11px;
+        &.error-custom {
+            border: 1px solid $red;
+        }
+    }
+    input {
+        padding: 2px;
+    }
+    select {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    label {
+        min-height: 31px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        i {
+            padding-left: 2px;
+        }
+        &.form-check-label {
+            min-height: 0;
+        }
+    }
+}

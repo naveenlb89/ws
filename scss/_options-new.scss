@@ -1,0 +1,432 @@
+body {
+    overflow-x: hidden;
+}
+
+.reg-option .reg-container {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px #CCCCCC;
+    margin-top: 38px;
+}
+
+.reg-option .reg-container .reg-firstDiv h5 {
+    color: #323C53;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    margin-left: 20px;
+}
+
+.reg-firstDiv {
+    box-shadow: 0 4px 4px -4px #CCCCCC;
+}
+
+.reg-option .reg-container .reg-secondDiv .reg-content {
+    background-color: #e2ebfd;
+    color: #3A5DAE;
+    margin: 15px 48px 0px 47px;
+    border-left: 5px solid;
+    border-radius: 0 10px 10px 0;
+    padding: 0 15px 0 15px;
+    font-size: 15px;
+}
+
+.reg-option .reg-container .reg-thirdDiv .reg-content-text {
+    margin: 40px 40px 0px 40px;
+    padding: 0 15px 0 15px;
+    font-size: 14px;
+    color: #717171;
+}
+
+.downloadBtn {
+    display: inline-block;
+    border: none;
+    background: none;
+    padding: 5px 10px 0 0px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #7A99AC;
+    margin-top: 10px
+}
+
+.printBtn {
+    display: inline-block;
+    border: none;
+    background: none;
+    padding: 5px 10px 0 0px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #7A99AC;
+    margin-top: 10px;
+}
+
+.checkbox-section {
+    margin: 20px 10px 20px 50px;
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+    border: #2196F3 1px solid;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.checkbox:hover input~.checkmark {
+    background-color: #eee;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.checkbox input:checked~.checkmark {
+    background-color: #fff;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.checkbox .checkmark:after {
+    top: 1.5px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #2196F3;
+}
+
+.final-actions-group {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.final-actions-group .save-btn {
+    float: right;
+    color: #ffffff;
+    border: 1px solid;
+    width: 200px;
+    border-radius: 30px;
+    background-color: #417EF2;
+}
+
+.final-actions-group .prev-btn {
+    color: #417EF2;
+    border: 1px solid #417EF2;
+    width: 200px;
+    border-radius: 20px;
+    padding: 6px 0px;
+}
+
+
+/*for scroll section*/
+
+.scrollbar-cyan::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-cyan::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-cyan::-webkit-scrollbar-thumb {
+    background-color: #808080;
+}
+
+.scrollbar-section {
+    position: relative;
+    overflow-y: scroll;
+    height: 320px;
+    margin: 20px 36px 0px 35px;
+    padding: 0 5px 0 5px;
+    border: #808080 1px solid;
+    border-radius: 10px 0 0 10px;
+}
+
+.scrollbar-section .card-body {
+    width: 100%;
+}
+
+.scrollbar-section .card-body h5 {
+    font-weight: bold;
+    color: #717171;
+}
+
+.scrollbar-section .card-body p {
+    font-size: 14px;
+    color: #717171;
+    line-height: 2;
+}
+
+.scrollbar-section .card-body p span {
+    font-weight: bold;
+}
+
+
+/* toggle style */
+
+
+/* .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+.toggle.ios .toggle-handle { border-radius: 20px; }
+
+.register-toggle {
+    width: 58px; height: 34px;
+} */
+
+
+/* .toggle-btn {
+    
+        color: #F36400;
+        border: 1px #F36400;
+        text-shadow: 1px 1px 1px #ccc;
+        font-size: 50px;
+} */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 71px;
+    height: 26px;
+    margin-top: 10px;
+    margin-right: 17px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-box span {
+    padding-right: 20px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 20px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.terms-cond {
+    margin: 10px 20px 10px 10px;
+}
+
+.orange {
+    color: #F36400
+}
+
+input:checked+.slider {
+    background-color: #F36400;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #F36400;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.t-and-C-content {
+    font-size: 13px;
+    font-weight: 600;
+    /* text-align: left; */
+}
+
+.t-and-C-content p {}
+
+.right-box {
+    height: 67px;
+    width: 58px;
+    margin-top: 15px;
+    margin-left: 17px;
+    background-color: #ffffff;
+    font-size: 43px;
+    text-align: center;
+    border: 0.5px solid #BABABA;
+}
+
+.right-box {
+    color: #BABABA
+}
+
+.active-letter {
+    border: 0.5px solid #FD0000;
+    color: #FD0000;
+}
+
+.right-box-container {
+    margin-top: 80px;
+}
+
+.reg-fifthDiv {
+    margin: 5px 25px;
+    font-size: 13px;
+}
+
+.switch-box {
+    float: right;
+    padding-top: 10px;
+}
+
+.last-div {
+    padding-bottom: 50px;
+}
+
+//.d-flex{margin-left: 30px;}
+
+/*Responsive start*/
+
+@media (min-width:360px) and (max-width: 767px) {
+    .right-box {
+        display: none;
+    }
+    .terms-cond {
+        margin-top: 10px;
+        width: 55%;
+    }
+    .final-actions-group .save-btn {
+        float: none;
+    }
+    .final-actions-group {
+        text-align: center;
+    }
+    .right-box-container {
+        margin-top: 10px;
+    }
+    // .d-flex {
+    //     display: block !important;
+    // }
+    .scrollbar-section {
+        margin: 20px 15px 0px 15px;
+        height: 425px;
+        font-size: 14px;
+    }
+    // .d-flex {
+    //     margin-left: 3px;
+    // }
+    .terms-cond {
+        margin: 10px 20px 10px 0px;
+    }
+    .checkbox-section {
+        margin: 20px 25px 20px 25px;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .right-box {
+        display: none;
+    }
+    .terms-cond {
+        margin-top: 10px;
+        width: 55%;
+    }
+    .final-actions-group .save-btn {
+        float: none;
+        margin-top: 10px;
+    }
+    .final-actions-group {
+        text-align: center;
+    }
+    .right-box-container {
+        margin-top: 10px;
+    }
+    // .d-flex {
+    //     display: block !important;
+    // }
+    .scrollbar-section {
+        margin: 20px 15px 0px 15px;
+    }
+    // .d-flex {
+    //     margin-left: 3px;
+    // }
+    .terms-cond {
+        margin: 10px 20px 10px 0px;
+    }
+    .checkbox-section {
+        margin: 20px 25px 20px 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .reg-option .reg-container {
+        margin-top: 83px;
+    }
+}

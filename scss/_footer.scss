@@ -1,0 +1,51 @@
+.footer{
+	background-color: $blue-variant;
+	color: $white;
+	padding: 25px 0;
+	border-bottom: 15px solid $gray-black;
+	a{
+		color: $white;
+		
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.footer-col{
+		border-right: 1px solid $white;
+	}
+		
+	h3{
+		font-size: 20px;
+		font-weight: normal;
+		
+		span{
+			padding:10px;
+		}
+	}
+	ul{
+		margin-left: 40px;
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+	.pay-card{
+		img{
+			width: 110px;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.footer{
+		text-align: center;
+		
+		.footer-col{
+			border: none;
+		}
+		
+		ul{
+			margin: 0 0 15px 0;
+			padding: 3px 0;
+		}
+	}
+}

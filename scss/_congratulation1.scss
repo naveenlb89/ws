@@ -1,0 +1,625 @@
+$color-Dark-Gray:#B1B1B1;
+$blue-light:#E7EDEF;
+$pale-grey:#BABABA;
+.m-congratulation {
+	margin-top:30px;
+    .top-container {
+        background-color: $white;
+        padding-bottom: 20px;
+        border: 1px solid $pale-grey;
+        .c-title {
+            padding: 15px;
+            color: $gray-black;
+            line-height: 1;
+            @include corpid(bold, 20px);
+            &:before{
+                content: '';
+                background: url(../assets/images/line-shadow.png) no-repeat;
+                height: 10px;
+                position: absolute;
+                bottom: -9px;
+                right: 0px;
+                left: 0;
+                width: 100%;
+                background-size: 100%;
+            }
+        }
+        .congrats-icon {
+            padding-left: 30px;
+            padding-top: 20px;
+            color: $green;
+        }
+        .congrats-wrap {
+            margin-top: 25px;
+            margin-left: 30px;
+            .congrats-heading {
+                @include sanspro(bold, 25px);
+            }
+            .congrats-text {
+                @include sanspro(regular, 14px);
+            }
+        }
+    }
+    .image-section {
+        padding-bottom: 20px;
+        .right-panel-content {
+            padding: 10px;
+            border: 1px solid $pale-grey;
+            border-radius: 14px;
+            .next-details {
+                margin-bottom: 5px;
+                @include corpid(regular, 15px);
+            }
+            .visit-btn {
+                @include border-radius(25px);
+                padding: 6px 20px;
+                font-size: 16px;
+                button {
+                    @include border-radius(25px);
+                    padding: 6px 26px;
+                    @include sanspro(semibold, 12px);
+                }
+            }
+            .right-panel-title {
+                span {
+                    color: $grayish-black;
+                    @include corpid(bold, 16px);
+                }
+            }
+        }
+    }
+    .accordion-div {
+        .accordion {
+            box-shadow: 0 8px 6px -6px $pale-grey;
+            .accordion-card {
+                padding-top: 13px;
+                background-color: $white;
+                box-shadow: 0 6px 6px -6px $pale-grey;
+                #reg-detail {
+                    color: #323C53;
+                    padding-top: 20px;
+                    @include corpid(bold, 18px);
+                }
+                #show-details,
+                #hide-udetails {
+                    padding-right: 10px;
+                    color: $gray-black;
+                    cursor: pointer;
+                    @include sanspro(semibold, 12px);
+                    i {
+                        padding-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .reg-details-content {
+        display: none;
+        margin: 0px;
+        .fa-Icon {
+            .text-right {
+                padding: 10px;
+                color: $grayish-black;
+                .icons {
+                    padding-left: 5px;
+                    font-size: 12px;
+                    @include sanspro(semibold, 12px);
+                }
+                i {
+                    font-size: 12px;
+                }
+            }
+        }
+        .bottom-last-space {
+            padding-bottom: 20px;
+            .left-reg-detail {
+                padding-left: 30px;
+                .action-btn {
+                    border: 1px solid $light-brown;
+                    background-color: $blue-light;
+                    margin-bottom: 5px;
+                    padding: 8px;
+                    i {
+                        padding: 7px;
+                    }
+                    .reg-btn {
+                        color: #4FAC43;
+                        border: 1px solid #4FAC43;
+                        border-radius: 15px;
+                        padding: 5px 15px 5px 15px;
+                        background-color: #E7EDEF;
+                        font-size: 12px;
+                        outline: none;
+                        margin-top: 1px;
+                    }
+                    .onWait-btn {
+                        color: #CB0000;
+                        border: 1px solid #CB0000;
+                        border-radius: 15px;
+                        padding: 5px 12px 5px 11px;
+                        font-size: 12px;
+                        background-color: #E7EDEF;
+                        outline: none;
+                        margin-top: 1px;
+                    }
+                    button {
+                        border-radius: 20px;
+                        margin-top: -3px;
+                        float: right;
+                    }
+                    .usr {
+                        padding-left: 10px;
+                        font-family: 'Corpid-Regular';
+                    }
+                }
+                .action-btn {
+                    button {
+                        border-radius: 20px;
+                        margin-top: -3px;
+                    }
+                    .fa {
+                        color: $light-grey;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .right-reg-detail {
+                margin: 0px;
+                padding-left: 0;
+                padding-right: 30px;
+                .reg-font {
+                    font-size: 12px;
+                }
+                .payment-detail {
+                    border: 1px solid $pale-grey;
+                    padding: 16px 16px 14px 16px;
+                    margin-right: 0px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+    .bottom-container {
+        margin-top: 15px;
+        margin-bottom: 50px;
+        .bottom-act {
+            margin-top: 0px;
+            button {
+                @include border-radius(25px);
+                padding: 6px 30px;
+                font-size: 16px;
+            }
+        }
+    }
+    .confirmation {
+        border: none;
+        margin-top: 10px;
+    }
+    .m-confirmation-details {
+        margin-top: 0px;
+        .confirmation-block {
+            padding: 0px 0px;
+            .reg-btn {
+                color: #4FAC43;
+                border: 1px solid #4FAC43;
+                border-radius: 15px;
+                padding: 5px 15px 5px 15px;
+                background-color: #E7EDEF;
+                font-size: 12px;
+                outline: none;
+            }
+            .traveller {
+                .onWait-btn {
+                    color: #CB0000;
+                    border: 1px solid #CB0000;
+                    border-radius: 15px;
+                    padding: 5px 12px 5px 12px;
+                    font-size: 12px;
+                    background-color: #E7EDEF;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .fa-Icon {
+        .icons {
+            padding-left: 5px;
+            font-size: 12px;
+            @include sanspro(semibold, 12px);
+        }
+        i {
+            font-size: 12px;
+        }
+    }
+}
+
+
+/* for responsive */
+
+@media screen and (max-width:768px) {
+    .m-congratulation {
+        .bottom-container {
+            text-align: center;
+            .bottom-act {
+                .congrats-button {
+                    font-size: 12px;
+                    width: 250px;
+                    float: none !important;
+                }
+            }
+        }
+        .top-container {
+            .congrats-icon {
+                font-size: 12px;
+                padding-left: 10px;
+            }
+            .congrats-wrap {
+                margin-left: 10px;
+                .congrats-heading {
+                    font-size: 16px;
+                }
+                .congrats-text {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:992px) {
+    .m-congratulation {
+        .top-container {
+            .right-reg-detail {
+                .payment-detail {
+                    font-size: 13px;
+                    font-weight: normal;
+                    padding: 30px 8px 30px 10px;
+                }
+            }
+        }
+        .reg-details-content {
+            .bottom-last-space {
+                .left-reg-detail {
+                    margin-left: -7px;
+                }
+                .right-reg-detail {
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:400px) {
+    .m-congratulation {
+        .reg-details-content {
+            .bottom-last-space {
+                .left-reg-detail {
+                    .action-btn {
+                        .usr {
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .reg-btn,
+                .onWait-btn {
+                    width: 75px;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .m-congratulation {
+        .image-section {
+            .image-div {
+                padding: 0;
+            }
+            .right-panel-content {
+                padding: 20px 0 0 0;
+                border: none;
+                .visit-btn {
+                    button {
+                        margin-top: 15px;
+                    }
+                }
+                .next-details {
+                    padding: 15px 15px 20px;
+                }
+                .right-panel-title {
+                    padding: 0 15px;
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+         margin-top: 80px;
+        .reg-details-content {
+            .bottom-last-space {
+                .left-reg-detail {
+                    .action-btn {
+                        .onWait-btn {
+                            padding: 5px 8px 6px 8px;
+                            font-size: 9px;
+                        }
+                        .reg-btn {
+                            padding: 5px 12px 6px 12px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .right-reg-detail {
+                    padding-left: 21px;
+                    padding-right: 24px;
+                    .payment-detail {
+                        padding: 4px 16px 4px 16px;
+                    }
+                }
+            }
+        }
+        .m-confirmation-details {
+            margin-bottom: 0;
+            .fa-Icon {
+                .text-right {
+                    text-align: center !important;
+                }
+            }
+            .confirmation-alert {
+                .btn-alert {
+                    float: right;
+                    font-size: 10px;
+                    width: 50%;
+                    padding: 7px 0;
+                }
+                .confirmation-info {
+                    margin-bottom: 0;
+                }
+            }
+            .confirmation {
+                margin-bottom: 15px;
+                border: 0;
+                h1 {
+                    @include box-shadow-none(none);
+                    margin-bottom: 0;
+                    padding: 10px 15px;
+                }
+                .confirmation-block {
+                    padding: 0 15px;
+                }
+            }
+            .confirmation-block {
+                .reg-btn {
+                    padding: 5px 10px 5px 12px;
+                    font-size: 11px;
+                }
+                .confirmation-alert,
+                .confirmation-p-0 {
+                    padding: 0;
+                }
+                .confirmation {
+                    border: 0;
+                    margin-bottom: 0;
+                }
+                .confirmation-primary,
+                .confirmation-danger {
+                    margin-bottom: 0;
+                    @include border-radius(0);
+                }
+                .traveller {
+                    border: 0;
+                    padding: 0;
+                    margin-bottom: 5px;
+                    .onWait-btn {
+                        padding: 5px 8px 5px 8px;
+                        font-size: 11px;
+                    }
+                }
+                .traveller-header {
+                    @include box-shadow-none(none);
+                }
+                .traveller-details {
+                    padding-bottom: 15px;
+                }
+                .traveller-address {
+                    padding: 0;
+                    border-top: 1px solid $pale-grey;
+                }
+                .address-row {
+                    padding: 10px 15px;
+                    &:first-child {
+                        padding-top: 10px;
+                    }
+                    .address-price {
+                        padding: 0;
+                    }
+                    .total {
+                        padding-right: 0;
+                    }
+                }
+                .relation-row {
+                    padding: 3px 0;
+                }
+                .payment-total-price {
+                    border: 0;
+                    background-color: $color-grey;
+                    padding: 10px 0 0;
+                    margin-bottom: 0;
+                    .total-price-details {
+                        background: $white;
+                        padding: 15px !important;
+                    }
+                }
+            }
+            .confirmation-btn {
+                padding: 0 15px;
+                .prev-btn,
+                .confirm-btn {
+                    width: 35%;
+                }
+            }
+        }
+        .top-container {
+            border: 0;
+            padding-bottom: 0;
+            .congrats-icon {
+                padding-top: 5px;
+                padding-left: 14px;
+            }
+            .congrats-wrap {
+                margin-top: 10px;
+                .congrats-heading {
+                    font-size: 20px;
+                }
+            }
+            .c-title {
+                @include box-shadow-none(none);
+            }
+            .accordion-div {
+                padding: 0;
+                .accordion {
+                    @include box-shadow-none(none);
+                    .accordion-card {
+                        #reg-detail {
+                            padding-top: 0;
+                        }
+                    }
+                    .card-body {
+                        padding: 5px 15px;
+                    }
+                }
+            }
+        }
+        .reg-details-content {
+            .fa-Icon {
+                .text-right {
+                    text-align: center !important;
+                }
+            }
+        }
+        .confirmation {
+            margin-bottom: 0;
+            .address-row {
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+        .bottom-container {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .m-congratulation {
+        .reg-details-content {
+            .bottom-last-space {
+                .right-reg-detail {
+                    padding-right: 17px;
+                    .payment-detail {
+                        padding: 16 10px 14px 10px;
+                    }
+                }
+            }
+        }
+        .accordion-div {
+            .accordion {
+                .accordion-card {
+                    padding: 12px 15px;
+                }
+            }
+        }
+        .m-confirmation-details {
+            padding: 0;
+            .confirmation {
+                h1 {
+                    padding: 10px 15px;
+                }
+                .btn-confirm {
+                    font-size: 12px;
+                    padding: 8px;
+                }
+                .btn-alert {
+                    font-size: 10.8px;
+                    padding: 8px;
+                }
+            }
+            .confirmation-block {
+                padding: 10px;
+                .traveller-header {
+                    padding: 8px 15px;
+                }
+                .traveller-address {
+                    padding: 0 0 0 15px;
+                }
+                .traveller-details label {
+                    font-size: 12px;
+                }
+                .address-row {
+                    h5 {
+                        font-size: 13px;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                    &.cancel-any span {
+                        font-size: 8px;
+                    }
+                }
+                .relation-row {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                .row-payment .card-left,
+                .paymen-plan .card-left {
+                    font-size: 13px;
+                }
+                .row-payment .card-right,
+                .paymen-plan .card-right {
+                    font-size: 10px;
+                }
+                .payment-total-price {
+                    font-size: 14px;
+                    .total-price {
+                        font-size: 13px;
+                    }
+                }
+                .confirmation-alert {
+                    p {
+                        font-size: 9px;
+                    }
+                }
+            }
+            .confirmation-traveller-details {
+                .traveller-details-left {
+                    padding-right: 5px;
+                    padding-left: 0;
+                }
+                .traveller-details-right {
+                    padding-left: 5px;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .m-congratulation {
+        .m-confirmation-details {
+            .confirmation-block {
+                .traveller-details,
+                .traveller-address {
+                    label {
+                        display: inline-block;
+                        min-height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

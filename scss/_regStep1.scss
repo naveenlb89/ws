@@ -1,0 +1,391 @@
+@import './_variable.scss';
+.m-reg-form-block {
+    box-shadow: 5px 5px 7px $light-grey;
+    border: 1px solid $light-grey;
+    margin: 20px 0;
+    background-color: $white;
+    .reg-form-head {
+        padding: 10px 20px;
+        border-bottom: 1px solid $light-grey;
+        margin-bottom: 20px;
+        box-shadow: 5px 5px 7px $light-grey;
+        h2 {
+            font-size: 25px;
+            line-height: 1;
+            display: inline-block;
+            font-family: 'SourceSansPro-Black';
+        }
+        .travellers-dropdown {
+            display: inline-block;
+            width: 320px;
+            margin-left: 10px;
+            border-radius: 15px;
+            border: 1px solid #989898;
+        }
+    }
+    h3{
+        margin-left: 20px;
+    }
+    a, a:hover{
+        color: $grayish-black;
+    }
+    .form-row{
+        margin-bottom: 5px;
+
+        label{
+            margin-bottom: 5px;
+        }
+    }
+    .form-head {
+        margin: 0 15px;
+        width: 100%;
+        a,
+        h2 {
+
+            display: block;
+            box-shadow: 5px 5px 7px $light-grey;
+            padding: 10px 20px;
+            color: $gray-black;
+            border-bottom: 1px solid $light-grey;
+            font-family: Corpid-Bold;
+            margin-bottom: 25px;
+            span{
+                display: inline-block;
+                vertical-align: middle;
+                &.traveler-dropdown{
+                    width: 25%;
+                    margin-left: 10px;
+
+                    select{
+                        border-radius: 15px;
+                    }
+                }
+            }
+			small{
+				@include sanspro(semibold, 12px);
+				color: $gray-variant;
+				vertical-align: middle;
+				display: inline-block;
+				margin-left: 20px;
+				margin-left: 20px;
+				clear: both;
+			}
+            &:hover {
+                text-decoration: none;
+            }
+            &:after {
+                font-family: 'FontAwesome';
+                content: "\f078";
+                float: right;
+                font-size: 15px;
+                line-height: 2;
+            }
+            &.collapsed:after {
+                content: "\f054";
+            }
+        }
+    }
+    hr {
+        border-top: 1px solid $light-grey;
+        margin-top: 2rem;
+    }
+    .alert-primary {
+        width: 100%;
+        color: #3A5DAE;
+        border-left: 7px solid #3A5DAE;
+        border-radius: 0 8px 8px 0;
+		
+    }
+	.ui-datepicker-trigger{
+		background: none;
+		border: none;
+		position: relative;
+		float: right;
+		bottom: 30px;
+		color: $gray-variant;
+		outline: none;
+	}
+    .add-phone {
+        color: $grayish-black;
+        font-size: 11px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0 5px;
+        .fa-plus {
+			background: $grayish-black;
+			padding: 2px;
+			color: #fff;
+			margin-right: 5px;
+            border-radius: 3px;
+        }
+    }
+	.date-field{
+		.error{
+			width: 71%;
+			float: left;
+		}
+	}
+    .add-traveller-block{
+        padding:20px;
+        border-top: 1px solid $light-grey;
+        .form-check{
+            margin-top: 20px;
+        }
+        .form-row{
+            margin-bottom: 0;
+        }
+		
+        .form-check-label{
+            font-size: 14px;
+        }
+    }
+    .traveller-form-wrapper,
+    .gaurdian-form-wrapper,
+    .responsible-party-wrapper,
+    .parent-form-wrapper,
+    .emergency-form-wrapper,
+    .primary-acc-form-wrapper{
+        padding: 0 20px;
+    }
+    .emergency-form-wrapper{
+        padding-bottom: 20px;
+    }
+    .acc-credentials {
+        h3 {
+            margin-left: 20px;
+        }
+        .acc-credentials-form-wrapper {
+            padding: 20px;
+            border-top: 1px solid $light-grey;
+            border-bottom: 1px solid $light-grey;
+        }
+        .emergency-disclaimer {
+			margin: 20px;
+			.form-check-label{
+				font-size: 14px;
+            }
+        }
+        form {
+            margin: 0;
+        }
+    }
+    .add-traveller-row {
+		border-top: 1px solid $light-grey;
+		.add-traveller-block{
+			padding: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.form-check-label{
+				margin-top: 2px;
+                font-size: 14px;
+                min-height: 0;
+			}
+		}
+	}
+}
+
+.m-trip-short-details {
+    box-shadow: 5px 5px 7px $light-grey;
+    background-color: $white;
+    margin-top: 20px;
+    h2 {
+        border-bottom: 1px solid $light-grey;
+		padding: 8px 0;
+    }
+    p {
+
+        font-size: 13px;
+        font-family: 'SansPro-Regular';
+        color: $gray-black;
+        clear: both;
+		margin-bottom: 0;
+    }
+    .trip-img-block{
+        padding-right: 0;
+    }
+    .badge {
+        margin-top: 25px;
+        border-radius: 15px;
+        padding: 5px 9px;
+        font-weight: normal;
+        background-color: $badge-background;
+        cursor: pointer;
+        color: $white;
+	}
+	.trip-intro{
+		padding: 0 15px 10px 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    .m-mobile-travellers-header {
+        background-color: $white;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        top: 81px;
+        box-shadow: 0 1px 8px $light-grey;
+        h2 {
+            margin: 0;
+            padding: 10px 15px;
+            font-size: 20px;
+            &:after {
+                font-family: 'FontAwesome';
+                content: "\f078";
+                float: right;
+                font-size: 15px;
+                line-height: 2;
+            }
+        }
+    }
+    .m-reg-form-block {
+        border: none;
+        box-shadow: none;
+        margin: 0 0 5px 0;
+
+        &.traveler-form-block{
+
+            margin-bottom: 50px;
+        }
+        .form-head {
+            margin: 0;
+            a,
+            h2 {
+                box-shadow: none;
+                padding: 10px 15px;
+                margin-bottom: 25px;
+				
+				small{
+					margin:0;
+					font-size: 11px;
+				}
+            }
+        }
+        h3{
+            margin-left: 0;
+        }
+        .row{
+            background-color: $white;
+        }
+        .add-phone{
+            margin-top: 25px;
+        }
+        .traveller-form-wrapper,
+        .gaurdian-form-wrapper,
+        .parent-form-wrapper,
+        .responsible-party-wrapper,
+        .emergency-form-wrapper,
+        .primary-acc-form-wrapper {
+            padding: 0;
+        }
+        .emergency-form-wrapper{
+            padding-bottom: 0;
+        }
+        .acc-credentials {
+            h3 {
+                margin: 0 0 15px 0;
+                font-size: 18px;
+            }
+            .acc-credentials-form-wrapper {
+                padding: 20px 0;
+            }
+            .emergency-disclaimer{
+                margin: 20px 0;
+            }
+        }
+        .add-traveller-block{
+            padding: 0;
+            border: none;
+            .remove-traveler-btn{
+                 float: left;
+            }
+        }
+        .reg-form-head {
+            padding: 0;
+            box-shadow: none;
+            h2 {
+                padding: 10px 0;
+                margin-bottom: 10px;
+            }
+            .travellers-dropdown {
+                width: 50%;
+            }
+        }
+        .form-row {
+            padding: 0;
+        }
+    }
+    .reg-account-container {
+        margin-top: 125px;
+    }
+    .m-trip-short-details {
+        border: none;
+        box-shadow: none;
+        margin: 0 0 5px 0;
+        .short-details-row{
+            background-color: $white;
+        }
+        .trip-img-block {
+            padding: 0;
+        }
+        .badge {
+            margin: 20px 0;
+		}
+		.trip-intro{
+            padding: 0 0 10px 0;
+		}
+    }
+    .mob-step-wizard {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid $light-grey;
+        .step-indicator {
+            color: #7A99AC;
+            padding: 3px 7px;
+            font-size: 10px;
+            cursor: pointer;
+            &.active {
+                color: $grayish-black;
+            }
+        }
+    }
+    .add-traveller-btn{
+        position: relative;
+        top: 30px;
+    }
+    .reg-account-container {
+        .form-submit-btn{
+            margin: 20px 0;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .m-mobile-travellers-header {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .m-trip-short-details{
+        .trip-img-block {
+            padding-right: 15px; 
+        }
+        h2{
+            padding-left: 15px;
+        }
+        .short-details-content{
+            padding: 15px;
+        }
+    } 
+	.m-reg-form-block {
+		.dob{
+			font-size: 10px;
+		}
+		.ui-datepicker-trigger{
+			padding-right: 2px;
+			bottom: 27px;
+			padding-right: 3px;
+			font-size: 13px;
+		}
+	}
+}

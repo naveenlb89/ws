@@ -1,0 +1,120 @@
+@mixin box-shadow($left, $top, $radius, $color) {
+    box-shadow: $left $top $radius $color;
+    -webkit-box-shadow: $left $top $radius $color;
+    -moz-box-shadow: $left $top $radius $color;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+@mixin box-shadow-none($none) {
+    box-shadow: $none;
+    -webkit-box-shadow: $none;
+    -moz-box-shadow: $none;
+}
+
+@mixin border-radius-value($top-left, $top-right, $bottom-right, $bottom-left) {
+    border-radius: $top-left $top-right $bottom-right $bottom-left;
+    -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
+    -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
+}
+
+@mixin sanspro($style: regular, $fontsize:14px) {
+    font-size: $fontsize;
+    @if $style==regular {
+        font-family: 'SansPro-Regular';
+    }
+    @else if $style==black {
+        font-family: 'SansPro-Black';
+    }
+    @else if $style==black-it {
+        font-family: 'SansPro-Black-It';
+    }
+    @else if $style==bold {
+        font-family: 'SansPro-Bold';
+    }
+    @else if $style==bold-it {
+        font-family: 'SourceSansPro-BoldIt';
+    }
+    @else if $style==extralight {
+        font-family: 'SansPro-ExtraLight';
+    }
+    @else if $style==extralight-it {
+        font-family: 'SansPro-ExtraLight-It';
+    }
+    @else if $style==italic {
+        font-family: 'SansPro-Italic';
+    }
+    @else if $style==light {
+        font-family: 'SansPro-Light';
+    }
+    @else if $style==light-it {
+        font-family: 'SansPro-Light-It';
+    }
+    @else if $style==semibold {
+        font-family: 'SansPro-Semibold';
+    }
+    @else if $style==semibold-it {
+        font-family: 'SansPro-Semibold-It';
+    }
+}
+
+@mixin corpid($style: regular, $fontsize: 14px) {
+    font-size: $fontsize;
+    @if $style==regular {
+        font-family: 'Corpid-Regular';
+    }
+    @else if $style==regular-it {
+        font-family: 'Corpid-Regular-It';
+    }
+    @else if $style==black {
+        font-family: 'Corpid-Black';
+    }
+    @else if $style==black-it {
+        font-family: 'Corpid-Black-It';
+    }
+    @else if $style==bold {
+        font-family: 'Corpid-Bold';
+    }
+    @else if $style==bold-it {
+        font-family: 'Corpid-Bold-It';
+    }
+    @else if $style==heavy {
+        font-family: 'Corpid-Heavy';
+    }
+    @else if $style==heavy-it {
+        font-family: 'Corpid-Heavy-It';
+    }
+    @else if $style==light {
+        font-family: 'Corpid-Light';
+    }
+    @else if $style==light-it {
+        font-family: 'CorpidC1sSCd-Light-It';
+    }
+    @else if $style==semibold {
+        font-family: 'SansPro-Semibold';
+    }
+    @else if $style==semibold-it {
+        font-family: 'SansPro-Semibold-It';
+    }
+}
+
+@mixin roboto($style: regular, $fontsize: 14px) {
+    font-size: $fontsize;
+    @if $style==regular {
+        font-family: 'Roboto-Regular';
+    }
+    @else if $style==bold {
+        font-family: 'Roboto-Bold';
+    }
+}
+
+@mixin myriadpro($style: regular, $fontsize: 14px) {
+    font-size: $fontsize;
+    @if $style==regular {
+        font-family: 'MyriadPro-Regular';
+    }
+}

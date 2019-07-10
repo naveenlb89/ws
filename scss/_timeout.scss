@@ -1,0 +1,27 @@
+// Connection Time Out
+.timeout-popup {
+    .modal-content {
+        text-align: left;
+        .modal-header {
+            padding: 12px 15px 5px;
+            h6 {
+                @include corpid(bold, 12px);
+            }
+        }
+        .modal-title {
+            margin-bottom: 10px;
+            @include corpid(bold, 16px);
+        }
+        p {
+            margin-bottom: 10px;
+            @include corpid(regular, 14px);
+        }
+        .timeout-btn {
+            @extend .btn-blue;
+            margin-top: 60px;
+        }
+        .btn-blue {
+            width: 100%;
+        }
+    }
+}
