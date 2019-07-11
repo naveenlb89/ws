@@ -1,6 +1,6 @@
 <?php include '../inc/_header.php';?>
 <?php include '../inc/_reg-header.php';?>
-<?php include '../inc/_mobile-step-wizard.php';?> 
+<?php include '../inc/_mobile-step-wizard.php';?>
 <div class="container-fluid m-step-wizard">
 	<section class="option-list">
 		<div class="container-fluid">
@@ -72,7 +72,7 @@
             </div>
             <div class="row confirmation-traveller-details">
                 <div class="col-12 col-md-8 traveller-details-left confirmation-p-0">
-				
+
                     <div class="traveller saved">
                         <form name="traveller-1"  action="" class="form-horizontal">
                             <div class="traveller-header clearfix">
@@ -154,7 +154,7 @@
                                         <div class="col-2 col-md-3 address-price">
                                             <span>$589.00</span>
                                         </div>
-                            
+
                                     </div>
                                     <div class="row address-row cancel-any">
 										<div class="col-9 col-md-9 address-block">
@@ -397,7 +397,7 @@
 												<span class="entered-val">123 North Main Street</span>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="col-md-7 traveller-address">
@@ -484,9 +484,9 @@
                             </div>
                         </form>
                     </div>
-                
+
 				</div>
-                <div class="col-12 col-md-4 traveller-details-right confirmation-p-0 ">
+                <div class="col-12 col-md-4 traveller-details-right confirmation-p-0 1">
                     <div class="traveller-payment-details">
                         <div class="traveller-header clearfix">
                             <div class="float-left">
@@ -602,7 +602,7 @@ $(document).ready(function(){
 	$("input,select").change(function(){
 		var enteredVal= $(this).val();
 		$(this).siblings(".entered-val").text(enteredVal);
-	});	
+	});
   });
   $(".saving").click(function(){
 	if(!$(".traveller-details input,.traveller-details select").hasClass("error-custom")){
@@ -612,5 +612,5 @@ $(document).ready(function(){
 });
 </script>
 
-<?php include '../inc/_reg-footer.php';?>	
+<?php include '../inc/_reg-footer.php';?>
 <?php include '../inc/_footer.php';?>

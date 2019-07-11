@@ -4,8 +4,8 @@
     <div class="container-fluid profile-container">
         <div class="row">
             <div class="col-12 col-md-12 profile-list">
-                <div class="profile-name"> 
-                    <i class="fas fa-arrow-left"></i> 
+                <div class="profile-name">
+                    <i class="fas fa-arrow-left"></i>
                     <span class="name d-md-none">Jane Doe | #323543</span>
                     <span class="desk-name d-none d-md-inline-block">Jane Doe | #323543</span>
                 </div>
@@ -101,7 +101,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-row">  
+                                        <div class="form-row">
                                             <div class="col-md-7">
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
@@ -123,9 +123,9 @@
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                    </div>  
+                                                    </div>
                                                 </div>
-                                            </div>   
+                                            </div>
                                             <div class="col-md-5">
                                                 <div class="form-row">
                                                     <div class="form-group col-md-8">
@@ -134,10 +134,10 @@
                                                     </div>
                                                     <div class="form-group col-md-3 col-6">
                                                         <label for="">Date of Birth</label>
-                                                        <input type="date" class="form-control form-control-lg" name="bday">								
-                                                    </div> 
+                                                        <input type="date" class="form-control form-control-lg" name="bday">
+                                                    </div>
                                                 </div>
-                                            </div>         
+                                            </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col-md-7">
@@ -157,7 +157,7 @@
                                                         <label>Address 2 (optional)</label>
                                                         <input type="text" class="form-control form-control-lg" placeholder="" name="cityGaurdian">
                                                     </div>
-                                                </div>  
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-row">
@@ -189,7 +189,7 @@
                                             </div>
                                         </div>
                                         <div class="form-row">
-                                            <div class="col-md-7"></div> 
+                                            <div class="col-md-7"></div>
                                             <div class="form-group col-md-5">
                                                 <div class="form-row">
                                                     <div class="col-md-8">
@@ -306,7 +306,7 @@
 												<p>Washington D.C. 2019 #251432</p>
 											</div>
 										</div>
-										
+
 										<div class="payment-section-short-details">
 											<div class="two-traveller-info">
 												<span class="traveler-img"><img src="../assets/images/jane-doe.jpeg"></span>
@@ -325,10 +325,10 @@
 														<div class="make-payment-btn">
 															<button class="btn">view</button>
 														</div>
-														
+
 													</div>
 												</div>
-												
+
 											</div>
 										</div>
 									</div>
@@ -342,7 +342,7 @@
 												<p>Versailles, France 2019 #4343332</p>
 											</div>
 										</div>
-										
+
 										<div class="payment-section-short-details">
 											<div class="two-traveller-info">
 												<span class="traveler-img"><img src="../assets/images/jane-doe.jpeg"></span>
@@ -361,10 +361,10 @@
 														<div class="make-payment-btn">
 															<button class="btn">view</button>
 														</div>
-														
+
 													</div>
 												</div>
-												
+
 											</div>
 										</div>
 									</div>
@@ -378,22 +378,22 @@
 												<div class="start-new-adv-text">Start Your New Adventure</div>
 											</div>
 										</div>
-										
+
 										<div class="payment-section-short-details">
 											<div class="traveller-program-id-info">
 												<div class="form-group">
 													<label>Enter Your Program ID <i class="fa fa-info-circle" aria-hidden="true" data-placement="top" data-toggle="tooltip" title="" data-original-title="To ensure that you receive current email invoices, please add payments@worldstrides.com to your permitted email sender list."></i></label>
 													<input type="text" class="form-control form-control-sm" placeholder="234567" name="text1">
-													
+
 												</div>
 											</div>
 											<div class="register-new-program-btn">
 												<img src="../assets/images/register-program.png" alt="register program button"/>
-												
+
 											</div>
 										</div>
 									</div>
-									
+
 								</div>
 							</div>
 						  </div>
@@ -402,13 +402,13 @@
                                     <section class="profile-tab-content">
                                         <div class="profile-head d-none d-md-block clearfix">
                                             <h2 class="float-left">Past Programs</h2>
-                                        </div> 
+                                        </div>
                                         <div class="profile-body">
                                             <div class="past-history">
                                                 <p class="memories">Go Make Memories!</p>
                                                 <p class="history">When you return, your program history will show up here</p>
                                             </div>
-                                        </div> 
+                                        </div>
                                     <section>
                                 </div>
                                 <div id="All" class="tab-pane">
@@ -433,7 +433,7 @@
                             <section class=" profile-tab-left">
                                 <ul class="nav nav-tabs flex-column d-md-block vertical-tabs-section hide-mobile filter-dropdown-mobile">
                                     <li class="nav-item">
-                                        <a class="nav-link active"  href="#Travelers"> 
+                                        <a class="nav-link active"  href="#Travelers">
                                             <label class="radio-container">Travelers & Contacts
                                                 <input type="radio" checked="checked" name="radio" class="d-md-none">
                                                 <span class="checkmark d-md-none"></span>
@@ -445,7 +445,7 @@
                                             <label class="radio-container">Staff
                                                 <input type="radio" name="radio" class="d-md-none">
                                                 <span class="checkmark d-md-none"></span>
-                                          </label> 
+                                          </label>
                                         </a>
                                     </li>
                                 </ul>
@@ -457,7 +457,7 @@
                                     <li class="nav-item"><a class="nav-link active"  href="#">Washington D.C. 2019</a></li>
                                     <li class="nav-item"><a class="nav-link"  href="#">Versailles, France 2019</a></li>
                                 </ul>
-                            </section>  
+                            </section>
                         </div>
                         <div class="col-md-10 profile-right">
                             <div class="tab-content">
@@ -465,7 +465,7 @@
                                     <section class="profile-tab-content">
                                         <div class="profile-head d-none d-md-block clearfix">
                                             <h2 class="float-left">Travelers & Contacts on My Account</h2>
-                                        </div> 
+                                        </div>
                                         <div class="profile-body">
                                             <div class="travellerContactsRow">
                                                 <div class="row">
@@ -522,7 +522,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div> 
+                                            </div>
                                         </div>
                                     <section>
                                 </div>
@@ -530,7 +530,7 @@
                                     <section class="profile-tab-content">
                                         <div class="profile-head d-none d-md-block clearfix">
                                             <h2 class="float-left">Staff Members for My Programs</h2>
-                                        </div> 
+                                        </div>
                                         <div class="profile-body">
                                             <div class="travellerContactsRow">
                                                 <div class="row">
@@ -584,7 +584,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div> 
+                                            </div>
                                         </div>
                                     <section>
                                 </div>
@@ -593,7 +593,7 @@
                     </div>
                 </div>
                 <div id="Payment" class="tab-pane profile-pane">
-                    
+
                 <div class="row">
                         <div class="col-md-2 profile-left">
                             <section class="mobile-tab d-md-none">
@@ -609,7 +609,7 @@
                             <section class=" profile-tab-left">
                                 <ul class="nav nav-tabs flex-column d-md-block vertical-tabs-section hide-mobile filter-dropdown-mobile">
                                     <li class="nav-item">
-                                        <a class="nav-link active"  href="#Travelers"> 
+                                        <a class="nav-link active"  href="#Travelers">
                                             <label class="radio-container">Travelers & Contacts
                                                 <input type="radio" checked="checked" name="radio" class="d-md-none">
                                                 <span class="checkmark d-md-none"></span>
@@ -621,7 +621,7 @@
                                             <label class="radio-container">Staff
                                                 <input type="radio" name="radio" class="d-md-none">
                                                 <span class="checkmark d-md-none"></span>
-                                          </label> 
+                                          </label>
                                         </a>
                                     </li>
                                 </ul>
@@ -633,7 +633,7 @@
                                     <li class="nav-item"><a class="nav-link active"  href="#">Washington D.C. 2019</a></li>
                                     <li class="nav-item"><a class="nav-link"  href="#">Versailles, France 2019</a></li>
                                 </ul>
-                            </section>  
+                            </section>
                         </div>
                         <div class="col-md-10 profile-right">
                             <div class="tab-content">
@@ -641,9 +641,9 @@
                                     <section class="profile-tab-content">
                                         <div class="profile-head d-none d-md-block clearfix">
                                             <h2 class="float-left">Jennie Doe | Versailles, France 2019</h2>
-                                        </div> 
+                                        </div>
                                         <div class="profile-body">
- 
+
                                         </div>
                                     </section>
                                 </div>
@@ -651,7 +651,7 @@
                                     <section class="profile-tab-content">
                                         <div class="profile-head d-none d-md-block clearfix">
                                             <h2 class="float-left">Staff Members for My Programs</h2>
-                                        </div> 
+                                        </div>
                                         <div class="profile-body">
                                             <div class="travellerContactsRow">
                                                 <div class="row">
@@ -705,7 +705,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div> 
+                                            </div>
                                         </div>
                                     <section>
                                 </div>
@@ -796,9 +796,9 @@ $(document).ready(function(){
    $("body").on('click',function(e){
        if($(e.target).is(".details,.filter-list"))
        return;
-    $(".filter-dropdown-mobile").hide();    
-   }); 
+    $(".filter-dropdown-mobile").hide();
+   });
 });
 </script>
-<?php include '../inc/_reg-footer.php';?>	
+<?php include '../inc/_reg-footer.php';?>
 <?php include '../inc/_footer.php';?>

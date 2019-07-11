@@ -152,6 +152,9 @@
                 @include corpid(regular, 23px);
                 margin-bottom: 0;
                 line-height: 1;
+                @media screen and (min-width: 1200px) {
+                  @include corpid(regular, 25px);
+                }
             }
             span {
                 color: $violet;
@@ -327,6 +330,9 @@
             color: $grayish-black;
             h4 span {
                 @include sanspro(regular, 9px);
+                @media (min-width: 1200px) {
+                  @include sanspro(regular, 14px);
+                }
             }
         }
         .row-payment {
@@ -341,6 +347,9 @@
         .paymen-plan .card-left {
             padding-right: 0;
             @include sanspro(semibold, 15px);
+            @media (min-width: 1200px) {
+              font-size: 20px;
+            }
         }
         .payment-address {
             .card-left,
@@ -352,6 +361,9 @@
         .paymen-plan .card-right {
             text-align: right;
             @include sanspro(regular, 12px);
+            @media (min-width: 1200px) {
+              font-size: 18px;
+            }
         }
         .payment-total-price {
             border: 1px solid $pale-grey;

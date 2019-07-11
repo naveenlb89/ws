@@ -1,6 +1,6 @@
 <?php include '../inc/_header.php';?>
 <?php include '../inc/_reg-header.php';?>
-<?php include '../inc/_mobile-step-wizard.php';?> 
+<?php include '../inc/_mobile-step-wizard.php';?>
 <div class="container-fluid m-step-wizard">
 	<section class="option-list">
 		<div class="container-fluid">
@@ -174,7 +174,7 @@
                                     <div class="col-12 col-md-12">
                                         <span>Total: <label class="total"> $916.00</label></span>
                                     </div>
-                                </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -185,7 +185,7 @@
                             </div>
                             <div class="float-right">
                             <span class="saving"><i class="fa fa-save"></i> Save</span>
-                                <span class="editing"><i class="fa fa-edit"></i> Edit</span>            
+                                <span class="editing"><i class="fa fa-edit"></i> Edit</span>
                             </div>
                         </div>
                         <div class="row traveller-block m-0">
@@ -243,7 +243,7 @@
                                     </div>
                                     <div class="col-2 col-md-3 address-price">
                                         <span>
-                                               
+
                                         </span>
                                     </div>
                                 </div>
@@ -267,7 +267,7 @@
                                     </div>
                                     <div class="col-2 col-md-3 address-price">
                                         <span>
-                                                
+
                                         </span>
                                     </div>
                                 </div>
@@ -532,5 +532,5 @@
         <button class="confirm-btn d-none d-md-block float-right">SUBMIT REGISTRATION</button>
     </div>
 </section>
-<?php include '../inc/_reg-footer.php';?>	
+<?php include '../inc/_reg-footer.php';?>
 <?php include '../inc/_footer.php';?>

@@ -1,6 +1,6 @@
 <?php include '../inc/_header.php';?>
 <?php include '../inc/_reg-header.php';?>
-<?php include '../inc/_mobile-step-wizard.php';?> 
+<?php include '../inc/_mobile-step-wizard.php';?>
 <div class="container-fluid m-step-wizard">
 	<section class="option-list">
 		<div class="container-fluid">
@@ -127,7 +127,7 @@
                                         <div class="col-2 col-md-3 address-price">
                                             <span>$589.00</span>
                                         </div>
-                            
+
                                     </div>
                                     <div class="row address-row">
                                         <div class="col-9 col-md-9 address-block">
@@ -337,7 +337,7 @@
                                                 <input type="text" class="form-control"  value="123 North Main Street" placeholder="" name="travellerAddress">
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="col-md-7 traveller-address">
@@ -530,5 +530,5 @@
         <button class="confirm-btn d-none d-md-block float-right">SUBMIT REGISTRATION</button>
     </div>
 </section>
-<?php include '../inc/_reg-footer.php';?>	
+<?php include '../inc/_reg-footer.php';?>
 <?php include '../inc/_footer.php';?>

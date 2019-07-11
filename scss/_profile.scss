@@ -1,981 +1,1177 @@
 .hide-mobile {
-    display: block;
-    @media (max-width: 767px) {
-        display: none;
-    }
+  display: block;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .vertical-tabs-section {
-    border-bottom: 0;
-    text-align: right;
-    .nav-link {
-        border: 0;
-        border-radius: 0;
-        padding: 13px 15px;
-        label {
-            color: $violet;
-            margin: 0;
-            @include sanspro(regular, 16px);
-        }
-        &.active {
-            background: $violet;
-            border-top-left-radius: 12px;
-            border-bottom-left-radius: 12px;
-            label {
-                color: $white;
-                margin: 0;
-            }
-        }
+  border-bottom: 0;
+  text-align: right;
+
+  .nav-link {
+    border: 0;
+    border-radius: 0;
+    padding: 13px 15px;
+
+    label {
+      color: $violet;
+      margin: 0;
+      @include sanspro(regular, 16px);
+      @media screen and (min-width: 1200px) {
+        font-size: 23px;
+      }
     }
+
+    .payment__user--heading {
+      color: $violet;
+      @media screen and (min-width: 1200px) {
+        font-size: 12px;
+      }
+    }
+
+    &.active {
+      background: $violet;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+
+      label {
+        color: $white;
+        margin: 0;
+      }
+
+      .payment__user--heading {
+        color: $violet;
+        @media screen and (min-width: 768px) {
+          color: $white;
+        }
+      }
+    }
+  }
 }
 
 .m-customer-profile {
-    // background: red;
-    .ma-b {
-        margin-bottom: 0;
+  // background: red;
+  .ma-b {
+    margin-bottom: 0;
+  }
+
+  .ui-datepicker-trigger {
+    position: absolute;
+    top: 30px;
+    right: 5px;
+  }
+
+  .profile-list {
+    background: $light-purple;
+
+    .profile-name {
+      padding: 18px 45px;
+      color: $white;
+
+      i {
+        cursor: pointer;
+      }
+
+      .desk-name,
+      .name {
+        padding-left: 10px;
+        @include sanspro(regular, 16px);
+      }
     }
-    .ui-datepicker-trigger {
-        position: absolute;
-        top: 30px;
-        right: 5px;
+  }
+
+  .profile-item {
+    background: $white;
+    @include box-shadow(5px, 5px, 7px, $light-grey);
+
+    .profile-tab {
+      padding: 5px 40px 0;
+      border: 0;
+      box-shadow: none;
+
+      li {
+        margin-right: 45px;
+      }
     }
-    .profile-list {
-        background: $light-purple;
-        .profile-name {
-            padding: 18px 45px;
-            color: $white;
-            i {
-                cursor: pointer;
-            }
-            .name,
-            .desk-name {
-                padding-left: 10px;
-                @include sanspro(regular, 16px);
-            }
+  }
+
+  .profile-left {
+    border-right: 1px solid $gray-tab;
+    background: $pale-yellow;
+    padding: 0;
+    min-height: 700px;
+    box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
+
+    .profile-details {
+      margin: 20px 0;
+
+      .profile-image {
+        text-align: center;
+        margin: 0 30px;
+
+        img {
+          width: 150px;
         }
-    }
-    .profile-item {
-        background: $white;
-        @include box-shadow(5px, 5px, 7px, $light-grey);
-        .profile-tab {
-            padding: 5px 40px 0;
-            border: 0;
-            box-shadow: none;
-            li {
-                margin-right: 45px;
-            }
+
+        .photo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 25px;
+          color: $white;
+          background: #55AF66;
+          border-radius: 50%;
+          padding: 23%;
+          line-height: 1;
+          @include sanspro(semibold, 85px);
         }
-    }
-    .profile-left {
-        border-right: 1px solid $gray-tab;
-        background: $pale-yellow;
-        padding: 0;
-        min-height: 700px;
-        box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
-        .profile-details {
-            margin: 20px 0;
-            .profile-image {
-                text-align: center;
-                margin: 0 30px;
-                img {
-                    width: 150px;
-                }
-                .photo {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0 25px;
-                    color: $white;
-                    background: #55AF66;
-                    border-radius: 50%;
-                    padding: 23%;
-                    line-height: 1;
-                    @include sanspro(semibold, 85px);
-                }
-                .edit-profile {
-                    display: block;
-                    border-bottom: 1px solid $darkish-gray;
-                    color: $orange-shade;
-                    padding: 10px 0;
-                    @include sanspro(regular, 16px);
-                }
-                .portal {
-                    display: flex;
-                    align-items: center;
-                    color: $light-blue;
-                    background: $white;
-                    padding: 15px;
-                    margin-top: 15px;
-                    text-align: left;
-                }
-                .portal-reader {
-                    flex: 0 1 75px;
-                    i {
-                        font-size: 48px;
-                    }
-                }
-                .portal-text {
-                    @include sanspro(semibold, 16px);
-                }
-                .academic-view {
-                    background: $light-blue;
-                    color: $white;
-                    padding: 12px;
-                    span {
-                        padding-right: 5px;
-                        @include sanspro(semibold, 16px);
-                    }
-                }
-            }
+
+        .edit-profile {
+          display: block;
+          border-bottom: 1px solid $darkish-gray;
+          color: $orange-shade;
+          padding: 10px 0;
+          @include sanspro(regular, 16px);
         }
+
+        .portal {
+          display: flex;
+          align-items: center;
+          color: $light-blue;
+          background: $white;
+          padding: 15px;
+          margin-top: 15px;
+          text-align: left;
+        }
+
+        .portal-reader {
+          flex: 0 1 75px;
+
+          i {
+            font-size: 48px;
+          }
+        }
+
+        .portal-text {
+          @include sanspro(semibold, 16px);
+        }
+
+        .academic-view {
+          background: $light-blue;
+          color: $white;
+          padding: 12px;
+
+          span {
+            padding-right: 5px;
+            @include sanspro(semibold, 16px);
+          }
+        }
+      }
     }
-    .profile-tab-left {
-        padding-left: 45px;
-        margin-top: 35px;
+  }
+
+  .profile-tab-left {
+    padding-left: 45px;
+    margin-top: 35px;
+  }
+
+  .profile-filter-left {
+    text-align: right;
+
+    .vertical-tabs-filter {
+      border: 0;
+      margin-top: 20px;
+
+      p {
+        padding: 8px 16px;
+        margin: 0;
+        color: $grayish-black;
+        font-size: 12px;
+        border-bottom: 1px solid $pale-grey;
+      }
+
+      .nav-link {
+        background: none;
+        border: 0;
+        color: $gray-variant;
+        @include sanspro(regular, 16px);
+
+        &.active {
+          color: $blue;
+        }
+      }
     }
-    .profile-filter-left {
+  }
+
+  .tab-content {
+    .profile-pane {
+      .acc-credentials-form-wrapper {
+        border-bottom: 0;
+      }
+
+      .save {
+        background: $color-grey;
+        padding: 25px 15px;
         text-align: right;
-        .vertical-tabs-filter {
-            border: 0;
-            margin-top: 20px;
-            p {
-                padding: 8px 16px;
-                margin: 0;
-                color: $grayish-black;
-                font-size: 12px;
-                border-bottom: 1px solid $pale-grey;
-            }
-            .nav-link {
-                background: none;
-                border: 0;
-                color: $gray-variant;
-                @include sanspro(regular, 16px);
-                &.active {
-                    color: $blue;
-                }
-            }
+
+        button {
+          border: 1px solid $blue;
+          color: $white;
+          background: $blue;
+          padding: 6px;
+          width: 20%;
+          @include border-radius(30px);
+          @include sanspro(semibold, 24px);
         }
+      }
     }
-    .tab-content {
-        .profile-pane {
-            .acc-credentials-form-wrapper {
-                border-bottom: 0;
-            }
-            .save {
-                background: $color-grey;
-                padding: 25px 15px;
-                text-align: right;
-                button {
-                    border: 1px solid $blue;
-                    color: $white;
-                    background: $blue;
-                    padding: 6px;
-                    width: 20%;
-                    @include border-radius(30px);
-                    @include sanspro(semibold, 24px);
-                }
-            }
+
+    .fundraising-block {
+      padding: 0 15px 0 40px;
+      margin-bottom: 100px;
+    }
+
+    .fund-block {
+      padding: 0 20px;
+
+      .fund-column {
+        padding: 0 10px;
+      }
+
+      p {
+        color: $grayish-black;
+        line-height: 1.8;
+      }
+
+      .social-media {
+        &.active {
+          .text {
+            color: $blue;
+          }
         }
-        .fundraising-block {
-            padding: 0 15px 0 40px;
-            margin-bottom: 100px;
+
+        .image {
+          border: 1px solid $dim-grey;
+
+          img {
+            width: 100%;
+          }
         }
-        .fund-block {
-            padding: 0 20px;
-            .fund-column {
-                padding: 0 10px;
-            }
-            p {
-                color: $grayish-black;
-                line-height: 1.8;
-            }
-            .social-media {
-                &.active {
-                    .text {
-                        color: $blue;
-                    }
-                }
-                .image {
-                    border: 1px solid $dim-grey;
-                    img {
-                        width: 100%;
-                    }
-                }
-                .ecard-text {
-                    @include sanspro(semibold, 36px);
-                    padding: 10px 0;
-                    color: $grayish-black;
-                }
-                .text {
-                    line-height: 1.5;
-                    // font-size: 16px;
-                }
-            }
-            button {
-                border: 1px solid $blue;
-                color: $white;
-                background: $blue;
-                padding: 6px;
-                width: 100%;
-                @include sanspro(regular, 20px);
-                border-radius: 0;
-            }
-            .easy-way {
-                padding: 25px 0 10px;
-            }
+
+        .ecard-text {
+          @include sanspro(semibold, 36px);
+          padding: 10px 0;
+          color: $grayish-black;
         }
-        .profile-tab-content {
-            border: 1px solid $light-grey;
-            margin: 20px 0;
-            background-color: $white;
-            min-height: 200px;
-            @include box-shadow(5px, 5px, 7px, $light-grey);
-            .profile-body {
-                padding: 0 20px;
-                .travellerContactsRow {
-                    margin: 20px;
-                    .imageSec {
-                        //display: inline-block;
-                        float: left;
-                        margin-right: 6px;
-                        img {
-                            width: 60px;
-                            height: 60px;
-                            @include border-radius(49%);
-                        }
-                    }
-                    .eachTravellerDetails {
-                        display: inline-block;
-                        margin-left: 1px;
-                        i {
-                            color: $pale-grey;
-                            font-size: 10px;
-                            cursor: pointer;
-                        }
-                        .travellerName {
-                            @include sanspro(bold, 16px);
-                            color: $brown;
-                        }
-                        .travellerId {
-                            color: $violet;
-                            @include sanspro(regular, 13px);
-                        }
-                        .travellerBasicInfo {
-                            @include sanspro(regular, 12px);
-                            color: $grayish-black;
-                            &.opacity-light {
-                                opacity: 0.5;
-                            }
-                        }
-                        .travellerType {
-                            text-transform: uppercase;
-                        }
-                        .travellerStatus {
-                            @include sanspro(regular, 16px);
-                            text-transform: uppercase;
-                        }
-                    }
-                }
-                .profile-wrapper {
-                    padding-bottom: 40px;
-                    .profile-section {
-                        height: 100%;
-                        h3 {
-                            color: $gray-black;
-                        }
-                        .days {
-                            color: $grayish-black;
-                        }
-                        input {
-                            margin-top: 3px;
-                        }
-                    }
-                }
-            }
-            .past-history {
-                color: $gray-variant;
-                padding: 50px 30px 75px;
-                .memories {
-                    @include corpid(regular, 32px);
-                    line-height: 1;
-                    margin-bottom: 5px;
-                }
-                .history {
-                    @include corpid(regular, 22px);
-                    line-height: 1;
-                }
-            }
-            .fund-blok {
-                padding: 0 20px;
-            }
+
+        .text {
+          line-height: 1.5;
+          // font-size: 16px;
         }
-        .profile-block {
-            box-shadow: none;
+      }
+
+      button {
+        border: 1px solid $blue;
+        color: $white;
+        background: $blue;
+        padding: 6px;
+        width: 100%;
+        @include sanspro(regular, 20px);
+        border-radius: 0;
+      }
+
+      .easy-way {
+        padding: 25px 0 10px;
+      }
+    }
+
+    .profile-tab-content {
+      border: 1px solid $light-grey;
+      margin: 20px 0;
+      background-color: $white;
+      min-height: 200px;
+      @include box-shadow(5px, 5px, 7px, $light-grey);
+
+      .profile-body {
+        padding: 0 20px;
+
+        .travellerContactsRow {
+          margin: 20px;
+
+          .imageSec {
+            //display: inline-block;
+            float: left;
+            margin-right: 6px;
+
+            img {
+              width: 60px;
+              height: 60px;
+              @include border-radius(49%);
+            }
+          }
+
+          .eachTravellerDetails {
+            display: inline-block;
+            margin-left: 1px;
+
+            i {
+              color: $pale-grey;
+              font-size: 10px;
+              cursor: pointer;
+            }
+
+            .travellerName {
+              @include sanspro(bold, 16px);
+              color: $brown;
+            }
+
+            .travellerId {
+              color: $violet;
+              @include sanspro(regular, 13px);
+            }
+
+            .travellerBasicInfo {
+              @include sanspro(regular, 12px);
+              color: $grayish-black;
+
+              &.opacity-light {
+                opacity: 0.5;
+              }
+            }
+
+            .travellerType {
+              text-transform: uppercase;
+            }
+
+            .travellerStatus {
+              @include sanspro(regular, 16px);
+              text-transform: uppercase;
+            }
+          }
         }
-        .emergency-profile-form {
-            background: $color-grey;
-            padding: 18px 0 0;
-            .emergency-row {
-                background: $white;
-                .emergency-form {
-                    padding: 0 20px;
-                }
-            }
-            .emergency-head,
-            .emergency-button {
-                float: left;
-            }
-            .emergency-button {
-                width: 25%;
-                padding-left: 20px;
-            }
-            button {
-                color: $white;
-                background: $blue;
-                @include sanspro(regular, 14px);
-                padding: 7px 15px;
-                border: 1px solid $blue;
-                width: 100%;
-                outline: none;
-                text-align: left;
-                @include border-radius(18px);
-                span {
-                    display: block;
-                    font-size: 28px;
-                    line-height: 16px;
-                    font-weight: bold;
-                    float: right;
-                    text-align: right;
-                }
-            }
-        }
-        .profile-tab-content,
-        .profile-block {
-            border: 0;
-            .profile-head {
-                padding: 10px 20px;
-                border-bottom: 1px solid $light-grey;
-                margin-bottom: 25px;
-                @include box-shadow(5px, 5px, 7px, $light-grey);
-                h2 {
-                    color: $grayish-black;
-                }
-            }
+
+        .profile-wrapper {
+          padding-bottom: 40px;
+
+          .profile-section {
+            height: 100%;
+
             h3 {
-                color: $violet;
+              color: $gray-black;
             }
-            .add-phone {
-                @include sanspro(semibold, 12px);
-                padding: 5px 0;
-                display: inline-block;
-                font-weight: normal;
+
+            .days {
+              color: $grayish-black;
             }
-            input,
-            select {
-                color: $gray-black;
-                padding: 2px 6px;
-                @include myriadpro(regular, 11px);
+
+            input {
+              margin-top: 3px;
             }
-            input::placeholder {
-                color: $gray-black;
-                opacity: 1;
-            }
-             :-ms-input-placeholder {
-                color: $gray-black;
-            }
-             ::-ms-input-placeholder {
-                color: $gray-black;
-            }
-            .pen {
-                padding-top: 30px;
-                display: inline-block;
-                color: $gray-variant;
-                cursor: pointer;
-            }
-            label {
-                span {
-                    font-size: 10px;
-                    padding-left: 5px;
-                }
-            }
+          }
         }
+      }
+
+      .past-history {
+        color: $gray-variant;
+        padding: 50px 30px 75px;
+
+        .memories {
+          @include corpid(regular, 32px);
+          line-height: 1;
+          margin-bottom: 5px;
+        }
+
+        .history {
+          @include corpid(regular, 22px);
+          line-height: 1;
+        }
+      }
+
+      .fund-blok {
+        padding: 0 20px;
+      }
     }
+
+    .profile-block {
+      box-shadow: none;
+    }
+
+    .emergency-profile-form {
+      background: $color-grey;
+      padding: 18px 0 0;
+
+      .emergency-row {
+        background: $white;
+
+        .emergency-form {
+          padding: 0 20px;
+        }
+      }
+
+      .emergency-button,
+      .emergency-head {
+        float: left;
+      }
+
+      .emergency-button {
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      button {
+        color: $white;
+        background: $blue;
+        @include sanspro(regular, 14px);
+        padding: 7px 15px;
+        border: 1px solid $blue;
+        width: 100%;
+        outline: none;
+        text-align: left;
+        @include border-radius(18px);
+
+        span {
+          display: block;
+          font-size: 28px;
+          line-height: 16px;
+          font-weight: bold;
+          float: right;
+          text-align: right;
+        }
+      }
+    }
+
+    .profile-block,
+    .profile-tab-content {
+      border: 0;
+
+      .profile-head {
+        padding: 10px 20px;
+        border-bottom: 1px solid $light-grey;
+        margin-bottom: 25px;
+        @include box-shadow(5px, 5px, 7px, $light-grey);
+
+        h2 {
+          color: $grayish-black;
+          @media screen and (min-width: 1200px) {
+            font-size: 32px;
+          }
+        }
+      }
+
+      h3 {
+        color: $violet;
+      }
+
+      .add-phone {
+        @include sanspro(semibold, 12px);
+        padding: 5px 0;
+        display: inline-block;
+        font-weight: normal;
+      }
+
+      input,
+      select {
+        color: $gray-black;
+        padding: 2px 6px;
+        @include myriadpro(regular, 11px);
+      }
+
+      input::placeholder {
+        color: $gray-black;
+        opacity: 1;
+      }
+
+      :-ms-input-placeholder {
+        color: $gray-black;
+      }
+
+      ::-ms-input-placeholder {
+        color: $gray-black;
+      }
+
+      .pen {
+        padding-top: 30px;
+        display: inline-block;
+        color: $gray-variant;
+        cursor: pointer;
+      }
+
+      label {
+        span {
+          font-size: 10px;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
 }
 
 .new-program {
-    button {
-        border: 2px solid $blue;
-        color: $blue;
-        background: $white;
-        position: relative;
-        padding: 7px 30px;
-        border-radius: 33px;
-        padding-right: 60px;
-        width: 100%;
-        outline: none;
-        @include sanspro(semibold, 21px);
-    }
-    span {
-        position: absolute;
-        color: $white;
-        background: $blue;
-        font-size: 40px;
-        width: 47px;
-        height: 46px;
-        border-radius: 50%;
-        line-height: 1;
-        top: -1px;
-        right: -1px;
-    }
-}
+  button {
+    border: 2px solid $blue;
+    color: $blue;
+    background: $white;
+    position: relative;
+    padding: 7px 30px;
+    border-radius: 33px;
+    padding-right: 60px;
+    width: 100%;
+    outline: none;
+    @include sanspro(semibold, 21px);
+  }
 
+  span {
+    position: absolute;
+    color: $white;
+    background: $blue;
+    font-size: 40px;
+    width: 47px;
+    height: 46px;
+    border-radius: 50%;
+    line-height: 1;
+    top: -1px;
+    right: -1px;
+  }
+}
 @media(max-width: 767px) {
-    .filter-dropdown-mobile {
-        position: absolute;
-        z-index: 1;
+  .filter-dropdown-mobile {
+    position: absolute;
+    z-index: 1;
+    background: $white;
+    width: 90%;
+    left: 5%;
+    border: 1px solid $darkish-gray;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 1px;
+    border-bottom: 0;
+    min-height: 100px;
+    @include border-radius(5px);
+    @include box-shadow(0px, 3px, 3px, $light-grey);
+
+    .nav-item {
+      margin: 5px 0;
+    }
+
+    .nav-link {
+      padding: 0 15px;
+
+      .radio-container {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+        margin-bottom: 0;
+        color: $violet;
+        @include sanspro(semibold, 16px);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 4px;
+          left: 0;
+          height: 15px;
+          width: 14px;
+          border-color: $violet;
+
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+
+          &:after {
+            top: 2.5px;
+            left: 2px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: $blue;
+            border-color: $blue;
+          }
+        }
+      }
+
+      &.active {
         background: $white;
-        width: 90%;
-        left: 5%;
-        border: 1px solid $darkish-gray;
-        padding: 10px 0;
-        margin: 0 auto;
-        text-align: left;
-        margin-top: 1px;
-        border-bottom: 0;
-        min-height: 100px;
-        @include border-radius(5px);
-        @include box-shadow(0px, 3px, 3px, $light-grey);
-        .nav-item {
-            margin: 5px 0;
-        }
-        .nav-link {
-            padding: 0px 15px;
-            .radio-container {
-                display: block;
-                position: relative;
-                padding-left: 25px;
-                cursor: pointer;
-                margin-bottom: 0;
-                color: $violet;
-                @include sanspro(semibold, 16px);
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-                input {
-                    position: absolute;
-                    opacity: 0;
-                    cursor: pointer;
-                }
-                .checkmark {
-                    position: absolute;
-                    top: 4px;
-                    left: 0;
-                    height: 15px;
-                    width: 14px;
-                    border-color: $violet;
-                    &:after {
-                        content: "";
-                        position: absolute;
-                        display: none;
-                    }
-                    &:after {
-                        top: 2.5px;
-                        left: 2px;
-                        width: 8px;
-                        height: 8px;
-                        border-radius: 50%;
-                        background: $blue;
-                        border-color: $blue;
-                    }
-                }
-            }
-            &.active {
-                background: $white;
-                label {
-                    color: $violet;
-                }
-                .checkmark:after {
-                    display: block;
-                }
-            }
-        }
-    }
-    .m-customer-profile {
-        margin-top: 0;
-        .profile-list {
-            .profile-name {
-                padding: 15px 0;
-            }
-        }
-        .profile-item {
-            border-bottom: 1px solid $light-grey;
-            padding: 0;
-            .profile-tab {
-                padding: 0;
-                justify-content: space-between;
-                li {
-                    margin-right: 0;
-                    .nav-link {
-                        padding: 8px 21px;
-                        margin: 0 1px;
-                    }
-                }
-            }
-        }
-        .profile-left {
-            background: $white;
-            border-right: 0;
-            min-height: auto;
-            @include box-shadow-none(none);
-            .profile-details {
-                margin: 15px 0 0;
-                .profile-image {
-                    margin: 0;
-                    img {
-                        width: 100px;
-                    }
-                }
-            }
-        }
-        .profile-tab-left {
-            padding: 0;
-            margin: 0;
-        }
-        .mobile-tab {
-            padding: 12px 15px;
-            border-bottom: 1px solid $pale-grey;
-            .filter-list {
-                line-height: 1;
-                @include sanspro(regular, 11px);
-                color: $gray-variant;
-            }
-            .tab-details,
-            .details-list {
-                text-align: right;
-            }
-            .details,
-            .tab-details {
-                padding-right: 8px;
-                @include sanspro(semibold, 13px);
-                color: $grayish-black;
-                line-height: 1;
-            }
-            i {
-                font-size: 12px;
-                color: $grayish-black;
-            }
-        }
-        .tab-content {
-            background: $white;
-            .emergency-profile-form {
-                padding: 0;
-                .emergency-row {
-                    .emergency-form {
-                        padding: 0 0 15px;
-                    }
-                }
-            }
-            .profile-pane {
-                .acc-credentials-form-wrapper {
-                    padding: 0;
-                    border-top: 0;
-                }
-                margin: 0;
-                padding: 0;
-                .save {
-                    background: $color-grey;
-                    padding: 25px 15px;
-                    button {
-                        border: 1px solid $blue;
-                        color: $white;
-                        background: $blue;
-                        padding: 6px;
-                        width: 100%;
-                        @include border-radius(30px);
-                        @include sanspro(semibold, 24px);
-                    }
-                }
-            }
-            .profile-block {
-                margin: 15px 0 0;
-                .form-row {
-                    margin-bottom: 0;
-                }
-                .add-phone {
-                    margin-top: 5px;
-                }
-                .acc-credentials h3 {
-                    margin: 0 0 5px 0;
-                }
-            }
-            .profile-tab-content {
-                margin: 0;
-                border: none;
-                box-shadow: none;
-                min-height: auto;
-                .past-history {
-                    padding: 30px 0;
-                    .memories {
-                        font-size: 21px;
-                    }
-                    .history {
-                        font-size: 16px;
-                    }
-                }
-                .profile-body {
-                    padding: 0;
-                    .profile-wrapper {
-                        padding: 15px 0 0;
-                        .make-payment-btn {
-                            button {
-                                padding: 8px 40px;
-                            }
-                        }
-                        .program-button {
-                            background: $body-background;
-                            margin-top: 30px;
-                            text-align: right;
-                            padding-bottom: 40px;
-                            .add-program {
-                                background: $white;
-                                button {
-                                    border: 2px solid $light-purple;
-                                    color: $light-purple;
-                                    background: $white;
-                                    position: relative;
-                                    padding: 12px 30px;
-                                    border-radius: 33px;
-                                    padding-right: 60px;
-                                    top: 22px;
-                                    span {
-                                        position: absolute;
-                                        color: $white;
-                                        background: $light-purple;
-                                        font-size: 40px;
-                                        width: 48px;
-                                        height: 48px;
-                                        border-radius: 50%;
-                                        line-height: 1;
-                                        top: -1px;
-                                        right: -1px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .travellerContactsRow {
-                        margin: 0;
-                    }
-                    .traveller-individual {
-                        padding: 20px 0;
-                        border-bottom: 1px solid $pale-grey;
-                    }
-                    .traveller-column {
-                        &:last-child {
-                            .traveller-individual {
-                                border-bottom: 0;
-                            }
-                        }
-                    }
-                }
-            }
-            .fund-row {
-                background: $color-grey;
-            }
-            .fundraising-block {
-                margin-bottom: 15px;
-                background: $white;
-                padding: 15px 15px 0;
-                box-shadow: 5px 5px 7px $light-grey;
-            }
-            .fund-block {
-                padding: 0;
-                .image {
-                    border: 0;
-                }
-                .easy-way {
-                    padding: 0;
-                }
-                .social-media {
-                    .ecard-text {
-                        font-size: 28px;
-                    }
-                    &.active {
-                        .text {
-                            color: $grayish-black;
-                        }
-                    }
-                }
-                button {
-                    margin-bottom: 25px;
-                }
-                .fund-column {
-                    padding: 0;
-                }
-            }
-        }
-    }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 991.5px) {
-    .m-customer-profile {
-        .profile-tab-left {
-            padding-left: 15px;
+        label {
+          color: $violet;
         }
-        .profile-item {
-            .profile-tab {
-                padding: 5px 15px 0;
-                li {
-                    margin-right: 20px;
-                }
-            }
-        }
-        .profile-list {
-            .profile-name {
-                padding: 18px 15px;
-            }
-        }
-        .profile-left {
-            .profile-details {
-                .profile-image {
-                    margin: 0 15px;
-                    img {
-                        width: 100px;
-                    }
-                    .photo {
-                        margin: 0 15px;
-                        height: 67px;
-                        font-size: 40px;
-                    }
-                    .portal {
-                        padding: 8px;
-                    }
-                    .portal-reader {
-                        i {
-                            font-size: 24px;
-                        }
-                    }
-                    .portal-text {
-                        font-size: 12px;
-                    }
-                    .academic-view {
-                        padding: 8px;
-                        span,
-                        i {
-                            font-size: 13px;
-                        }
-                    }
-                    .edit-profile {
-                        font-size: 11px;
-                    }
-                }
-            }
-        }
-        .tab-content {
-            .profile-pane {
-                padding: 0;
-            }
-            .profile-block {
-                label {
-                    font-size: 10px;
-                    .fa-info-circle {
-                        padding: 0 0 2px 5px;
-                    }
-                }
-                input,
-                select {
-                    padding: 2px;
-                }
-            }
-            .fundraising-block {
-                padding: 0 15px;
-            }
-            .fund-block {
-                p {
-                    font-size: 13px;
-                }
-                .social-media {
-                    .ecard-text {
-                        font-size: 25px;
-                    }
-                    .text {
-                        font-size: 12px;
-                        min-height: 50px;
-                    }
-                }
-            }
-        }
-        .profile-section {
-            min-height: auto;
-        }
-    }
-    .new-program {
-        button {
-            font-size: 9px;
-            padding-right: 0;
-            padding-left: 10px;
-            text-align: left;
-        }
-        span {
-            width: 28px;
-            height: 28px;
-            font-size: 20px;
-            line-height: 26px;
-            text-align: center;
-        }
-    }
-}
 
-@media only screen and (min-width: 992px) and (max-width:1200px) {
-    .m-customer-profile {
-        .profile-left {
-            .profile-details {
-                .profile-image {
-                    margin: 0 15px;
-                    img {
-                        width: 120px;
-                    }
-                }
-            }
+        .checkmark:after {
+          display: block;
         }
-        .tab-content {
-            .profile-tab-content {
-                .profile-body {
-                    .travellerContactsRow {
-                        .eachTravellerDetails {
-                            .travellerName {
-                                font-size: 14px;
-                            }
-                            .travellerBasicInfo {
-                                font-size: 9px;
-                            }
-                        }
-                    }
-                }
-            }
-            .fund-block {
-                .social-media {
-                    .ecard-text {
-                        font-size: 33px;
-                    }
-                    .text {
-                        font-size: 15px;
-                        min-height: 68px;
-                    }
-                }
-            }
-        }
+      }
     }
-    .new-program {
-        button {
-            padding-right: 0;
+  }
+
+  .m-customer-profile {
+    margin-top: 0;
+
+    .profile-list {
+      .profile-name {
+        padding: 15px 0;
+      }
+    }
+
+    .profile-item {
+      border-bottom: 1px solid $light-grey;
+      padding: 0;
+
+      .profile-tab {
+        padding: 0;
+        justify-content: space-between;
+
+        li {
+          margin-right: 0;
+
+          .nav-link {
+            padding: 8px 21px;
+            margin: 0 1px;
+          }
+        }
+      }
+    }
+
+    .profile-left {
+      background: $white;
+      border-right: 0;
+      min-height: auto;
+      @include box-shadow-none(none);
+
+      .profile-details {
+        margin: 15px 0 0;
+
+        .profile-image {
+          margin: 0;
+
+          img {
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    .profile-tab-left {
+      padding: 0;
+      margin: 0;
+    }
+
+    .mobile-tab {
+      padding: 12px 15px;
+      border-bottom: 1px solid $pale-grey;
+
+      .filter-list {
+        line-height: 1;
+        @include sanspro(regular, 11px);
+        color: $gray-variant;
+      }
+
+      .details-list,
+      .tab-details {
+        text-align: right;
+      }
+
+      .details,
+      .tab-details {
+        padding-right: 8px;
+        @include sanspro(semibold, 13px);
+        color: $grayish-black;
+        line-height: 1;
+      }
+
+      i {
+        font-size: 12px;
+        color: $grayish-black;
+      }
+    }
+
+    .tab-content {
+      background: $white;
+
+      .emergency-profile-form {
+        padding: 0;
+
+        .emergency-row {
+          .emergency-form {
+            padding: 0 0 15px;
+          }
+        }
+      }
+
+      .profile-pane {
+        .acc-credentials-form-wrapper {
+          padding: 0;
+          border-top: 0;
+        }
+        margin: 0;
+        padding: 0;
+
+        .save {
+          background: $color-grey;
+          padding: 25px 15px;
+
+          button {
+            border: 1px solid $blue;
+            color: $white;
+            background: $blue;
+            padding: 6px;
             width: 100%;
-            font-size: 11px;
-            text-align: left;
+            @include border-radius(30px);
+            @include sanspro(semibold, 24px);
+          }
         }
-        span {
-            font-size: 29px;
-            width: 32px;
-            height: 32px;
-            text-align: center;
-        }
-    }
-}
+      }
 
-@media only screen and (min-width: 1201px) and (max-width:1460px) {
-    .new-program {
-        button {
-            padding-right: 0;
-            width: 100%;
+      .profile-block {
+        margin: 15px 0 0;
+
+        .form-row {
+          margin-bottom: 0;
+        }
+
+        .add-phone {
+          margin-top: 5px;
+        }
+
+        .acc-credentials h3 {
+          margin: 0 0 5px;
+        }
+      }
+
+      .profile-tab-content {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        min-height: auto;
+
+        .past-history {
+          padding: 30px 0;
+
+          .memories {
+            font-size: 21px;
+          }
+
+          .history {
             font-size: 16px;
-            text-align: left;
+          }
         }
-        span {
-            font-size: 36px;
-            width: 38px;
-            height: 38px;
-            text-align: center;
-        }
-    }
-}
 
+        .profile-body {
+          padding: 0;
+
+          .profile-wrapper {
+            padding: 15px 0 0;
+
+            .make-payment-btn {
+              button {
+                padding: 8px 40px;
+              }
+            }
+
+            .program-button {
+              background: $body-background;
+              margin-top: 30px;
+              text-align: right;
+              padding-bottom: 40px;
+
+              .add-program {
+                background: $white;
+
+                button {
+                  border: 2px solid $light-purple;
+                  color: $light-purple;
+                  background: $white;
+                  position: relative;
+                  padding: 12px 30px;
+                  border-radius: 33px;
+                  padding-right: 60px;
+                  top: 22px;
+
+                  span {
+                    position: absolute;
+                    color: $white;
+                    background: $light-purple;
+                    font-size: 40px;
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    line-height: 1;
+                    top: -1px;
+                    right: -1px;
+                  }
+                }
+              }
+            }
+          }
+
+          .travellerContactsRow {
+            margin: 0;
+          }
+
+          .traveller-individual {
+            padding: 20px 0;
+            border-bottom: 1px solid $pale-grey;
+          }
+
+          .traveller-column {
+            &:last-child {
+              .traveller-individual {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .fund-row {
+        background: $color-grey;
+      }
+
+      .fundraising-block {
+        margin-bottom: 15px;
+        background: $white;
+        padding: 15px 15px 0;
+        box-shadow: 5px 5px 7px $light-grey;
+      }
+
+      .fund-block {
+        padding: 0;
+
+        .image {
+          border: 0;
+        }
+
+        .easy-way {
+          padding: 0;
+        }
+
+        .social-media {
+          .ecard-text {
+            font-size: 28px;
+          }
+
+          &.active {
+            .text {
+              color: $grayish-black;
+            }
+          }
+        }
+
+        button {
+          margin-bottom: 25px;
+        }
+
+        .fund-column {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.5px) {
+  .m-customer-profile {
+    .profile-tab-left {
+      padding-left: 15px;
+    }
+
+    .profile-item {
+      .profile-tab {
+        padding: 5px 15px 0;
+
+        li {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .profile-list {
+      .profile-name {
+        padding: 18px 15px;
+      }
+    }
+
+    .profile-left {
+      .profile-details {
+        .profile-image {
+          margin: 0 15px;
+
+          img {
+            width: 100px;
+          }
+
+          .photo {
+            margin: 0 15px;
+            height: 67px;
+            font-size: 40px;
+          }
+
+          .portal {
+            padding: 8px;
+          }
+
+          .portal-reader {
+            i {
+              font-size: 24px;
+            }
+          }
+
+          .portal-text {
+            font-size: 12px;
+          }
+
+          .academic-view {
+            padding: 8px;
+
+            i,
+            span {
+              font-size: 13px;
+            }
+          }
+
+          .edit-profile {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      .profile-pane {
+        padding: 0;
+      }
+
+      .profile-block {
+        label {
+          font-size: 10px;
+
+          .fa-info-circle {
+            padding: 0 0 2px 5px;
+          }
+        }
+
+        input,
+        select {
+          padding: 2px;
+        }
+      }
+
+      .fundraising-block {
+        padding: 0 15px;
+      }
+
+      .fund-block {
+        p {
+          font-size: 13px;
+        }
+
+        .social-media {
+          .ecard-text {
+            font-size: 25px;
+          }
+
+          .text {
+            font-size: 12px;
+            min-height: 50px;
+          }
+        }
+      }
+    }
+
+    .profile-section {
+      min-height: auto;
+    }
+  }
+
+  .new-program {
+    button {
+      font-size: 9px;
+      padding-right: 0;
+      padding-left: 10px;
+      text-align: left;
+    }
+
+    span {
+      width: 28px;
+      height: 28px;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+  .m-customer-profile {
+    .profile-left {
+      .profile-details {
+        .profile-image {
+          margin: 0 15px;
+
+          img {
+            width: 120px;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      .profile-tab-content {
+        .profile-body {
+          .travellerContactsRow {
+            .eachTravellerDetails {
+              .travellerName {
+                font-size: 14px;
+              }
+
+              .travellerBasicInfo {
+                font-size: 9px;
+              }
+            }
+          }
+        }
+      }
+
+      .fund-block {
+        .social-media {
+          .ecard-text {
+            font-size: 33px;
+          }
+
+          .text {
+            font-size: 15px;
+            min-height: 68px;
+          }
+        }
+      }
+    }
+  }
+
+  .new-program {
+    button {
+      padding-right: 0;
+      width: 100%;
+      font-size: 11px;
+      text-align: left;
+    }
+
+    span {
+      font-size: 29px;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width:1460px) {
+  .new-program {
+    button {
+      padding-right: 0;
+      width: 100%;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    span {
+      font-size: 36px;
+      width: 38px;
+      height: 38px;
+      text-align: center;
+    }
+  }
+}
 @media (min-width: 768px) and (max-width: 1200px) {
-    .m-customer-profile {
-        .ui-datepicker-trigger {
-            top: 40px;
-        }
-        .tab-content {
-            .profile-block {
-                .pen {
-                    padding-top: 45px;
-                }
-            }
-        }
+  .m-customer-profile {
+    .ui-datepicker-trigger {
+      top: 40px;
     }
-    .vertical-tabs-section .nav-link label {
-        min-height: auto;
-        display: inline-block;
-    }
-}
 
+    .tab-content {
+      .profile-block {
+        .pen {
+          padding-top: 45px;
+        }
+      }
+    }
+  }
+
+  .vertical-tabs-section .nav-link label {
+    min-height: auto;
+    display: inline-block;
+  }
+}
 @media only screen and (max-width: 1199px) and (min-width: 1024px) {
-    .profile-section {
-        min-height: auto;
-    }
+  .profile-section {
+    min-height: auto;
+  }
 }
-
 @media only screen and (max-width: 1440px) and (min-width: 1200px) {
-    .profile-section {
-        min-height: auto;
-    }
+  .profile-section {
+    min-height: auto;
+  }
 }
-
 @media only screen and (min-width: 1300px) {
-    .profile-section {
-        .portal-payment-image-sec {
-            .portal-payment-section-content {
-                p {
-                    font-size: 24px;
-                    .travelerId {
-                        font-size: 12px;
-                        opacity: 0.9;
-                    }
-                }
-            }
-        }
-    }
-    .m-customer-profile .tab-content .profile-tab-content .profile-body .profile-wrapper {
-        padding-right: 40px;
-    }
-}
+  .profile-section {
+    .portal-payment-image-sec {
+      .portal-payment-section-content {
+        p {
+          font-size: 24px;
 
+          .travelerId {
+            font-size: 12px;
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+  }
+
+  .m-customer-profile .tab-content .profile-tab-content .profile-body .profile-wrapper {
+    padding-right: 40px;
+  }
+}
 @media only screen and (min-width: 1751px) {
-    .profile-section {
-        min-height: auto;
-        .start-reg-text {
-            h3 {
-                font-size: 40px;
-                margin-bottom: 0;
-            }
-            .start-new-adv-text {
-                font-size: 18px;
-            }
-        }
-        .payment-section-short-details {
-            .make-payment-sec {
-                .make-payment-heading h6 {
-                    font-size: 21px;
-                }
-                .make-payment-btn {
-                    button {
-                        padding: 6px 55px;
-                    }
-                }
-            }
-        }
+  .profile-section {
+    min-height: auto;
+
+    .start-reg-text {
+      h3 {
+        font-size: 40px;
+        margin-bottom: 0;
+      }
+
+      .start-new-adv-text {
+        font-size: 18px;
+      }
     }
-    .m-customer-profile .tab-content .fund-block .social-media .text {
-        font-size: 16px;
+
+    .payment-section-short-details {
+      .make-payment-sec {
+        .make-payment-heading h6 {
+          font-size: 21px;
+        }
+
+        .make-payment-btn {
+          button {
+            padding: 6px 55px;
+          }
+        }
+      }
     }
+  }
+
+  .m-customer-profile .tab-content .fund-block .social-media .text {
+    font-size: 16px;
+  }
 }
